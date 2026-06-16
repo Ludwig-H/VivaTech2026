@@ -11,7 +11,7 @@ Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de 
 2. **Applications Algorithmiques Secondaires (Objectif N°2) :** Valider l'attrait commercial de vos autres modèles théoriques :
     *   **Détection de Fissures (Signal/CNDT) :** Squelettisation par graphes de Frangi généralisés pour le contrôle d'infrastructures (SSNDT).
     *   **Assemblage d'Haplotypes (BioTech) :** Détection de communautés sur graphes signés (MCMC couplés) pour le séquençage génomique (Alithea Biotechnology).
-    *   **Cybersécurité :** Application de vos modèles de graphes signés à la résolution 3-SAT (vérification/cryptanalyse) et à la détection d'intrusions réseau (Aikido Security, Cyberagentur).
+    *   **Cybersécurité :** Application de vos modèles de graphes signés à la résolution 3-SAT (vérification/cryptanalyse) et à la détection d'intrusions réseau (Aikido Security, Cyberagentur, DuoKey).
 3. **Parcours Inria Startup Studio (Objectif N°3) :** Suivre le programme de la **Learning Expedition (LEX)** de l'Inria et réseauter avec des investisseurs DeepTech (Bpifrance, Elaia, Partech, etc.) pour structurer la future startup.
 
 ---
@@ -21,19 +21,28 @@ Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de 
 Vos travaux de thèse sur les graphes signés, la percolation et le clustering hiérarchique trouvent des applications directes dans le domaine de la cybersécurité. Voici comment vos modèles s'appliquent à ces données :
 
 ### A. Résolution du problème 3-SAT (Vérification formelle et Cryptanalyse)
-*   **Données techniques :** Formules logiques CNF modélisant des propriétés de sécurité de logiciels (vérification de smart contracts, protocoles) ou des équations cryptographiques (collisions de hashs, clés privées).
-*   **Modèles mathématiques :** Encodage de $3\text{-SAT}$ sous forme de graphes/hypergraphes signés. Introduction d'un nœud de référence $T$ (True) et construction de liens triangulaires (littéraux) et tétraédriques (avec $T$), où les signes encodent la logique de la clause. Résoudre la formule équivaut à minimiser l'énergie d'un modèle de spin (Spin Glass Ground State) via votre dynamique de Swendsen-Wang signée / triangulaire.
-*   **Ce qu'on extrait :** Une affectation qui satisfait toutes les clauses, permettant de prouver la sécurité ou d'extraire un exploit (vulnérabilité).
+*   **Données techniques :** Formules logiques CNF (Conjunctive Normal Form) modélisant des propriétés de sécurité de logiciels (vérification de smart contracts, protocoles cryptographiques) ou des équations logiques décrivant des primitives cryptographiques (recherche de collisions de hashs, cryptanalyse algébrique de clés de chiffrement comme AES).
+*   **Modèles mathématiques :** Modélisation de $3\text{-SAT}$ sous forme de graphes et d'hypergraphes signés. Introduction d'un nœud de référence $T$ (True), construction de liens triangulaires (littéraux) et tétraédriques (avec $T$). Vos travaux démontrent que la **dynamique triangulaire** (Swendsen-Wang généralisée à l'ordre supérieur) génère une **percolation de triangles corrélés** dont le seuil critique est strictement meilleur que la percolation d'arêtes classique.
+*   **Application Cyber :** Cela permet aux échantillonneurs MCMC de traverser et d'échapper rapidement aux minima locaux (frustration logique) inhérents aux équations de cryptanalyse, là où les solveurs classiques (SAT solvers stochastiques) restent bloqués.
+*   **Ce qu'on extrait :** Une affectation satisfaisant toutes les clauses, correspondant à une clé cryptographique découverte ou à un chemin d'exploit logique.
 
-### B. Détection d'Intrusions Réseau et Mouvements Latéraux
-*   **Données techniques :** Graphes de flux réseaux (NetFlows) et graphes d'authentification (Active Directory) où les nœuds sont des utilisateurs/machines et les arêtes sont des connexions.
-*   **Modèles mathématiques :** Stochastic Block Models (SBM) ou corrélation d'activités (attraction/répulsion). Utilisation de méthodes de percolation pour distinguer les bruits de fond du réseau (percolant) des attaques ciblées (isolées sous forme de petites communautés denses).
-*   **Ce qu'on extrait :** Des sous-graphes d'anomalies représentant des botnets ou des mouvements latéraux.
+### B. Détection d'Intrusions Réseau (Zero-Shot Network Anomaly Detection)
+*   **Données techniques :** Graphes de flux réseaux à haute dimension (NetFlows : IP sources, IP cibles, ports, protocoles, paquets) et journaux d'accès Active Directory.
+*   **Modèles mathématiques :** Utilisation de **HGP-Clusterer** (complexes de Čech et triangulation de Delaunay d'ordre $K$). DBSCAN et HDBSCAN souffrent de l'effet de chaînage ("noise-bridge") où quelques paquets de bruit connectent anormalement une intrusion à faible densité avec le trafic de fond à haute densité, masquant l'attaque. HGP-Clusterer résout cela via la percolation sur complexes cellulaires de Čech, isolant rigoureusement les ponts de bruit.
+*   **Application Cyber :** Détection d'anomalies (exfiltration de données, mouvements latéraux) sans aucune base de données d'apprentissage historique, en s'appuyant uniquement sur des *a priori* géométriques faibles de volume et de densité.
+*   **Ce qu'on extrait :** Des sous-graphes d'anomalies compacts représentant des botnets ou des identités compromises.
 
-### C. Classification de Malwares (Threat Intelligence)
-*   **Données techniques :** Indicateurs de compromission (IOCs : signatures, appels API, clés de registre modifiées) partagés entre différents échantillons.
-*   **Modèles mathématiques :** Correlation Clustering sur graphes signés (positif si IOCs partagés, négatif si comportements incompatibles). Votre algorithme MCMC probabiliste sur graphes signés permet de partitionner efficacement ces échantillons.
-*   **Ce qu'on extrait :** Des familles de malwares (campagnes d'attaques coordonnées).
+### C. Classification de Malwares (Threat Intelligence & Attribution)
+*   **Données techniques :** Indicateurs de compromission (IOCs) partagés entre fichiers de virus (IPs de serveurs C2, clés de registre, signatures de fichiers, sous-routines de code).
+*   **Modèles mathématiques :** Modélisation sous forme de **Graphes Signés** où une arête positive (attraction) indique le partage d'indicateurs uniques (même auteur supposé) et une arête négative (répulsion) indique des conflits techniques incompatibles (compilateur différent, cibles géographiques opposées).
+*   **Application Cyber :** Application de votre modèle bayésien et de l'échantillonnage de Gibbs (Swendsen-Wang signé) pour partitionner de manière robuste et probabiliste les échantillons en familles d'attaques, même face à des techniques de déception (faux indicateurs insérés par les attaquants).
+*   **Ce qu'on extrait :** Des regroupements de malwares (campagnes d'attaques coordonnées) et des attributions de groupes APT.
+
+### D. Tracé de Tunnels de Communication Botnet (C2 Command Channels)
+*   **Données techniques :** Graphes de routage internet ou topologies logiques de communication.
+*   **Modèles mathématiques :** Utilisation de votre squelettisation par **graphe de Frangi généralisé** et métriques de centralité spatiale (Chapitre 12 de la thèse).
+*   **Application Cyber :** Les canaux de communication C2 (Command & Control) forment des structures linéaires arborescentes au milieu du bruit de fond du trafic internet global. En appliquant votre filtre géométrique de Frangi adapté à la dimensionalité du réseau et en mesurant la centralité pondérée des branches, on extrait la structure "osseuse" du réseau de botnets.
+*   **Ce qu'on extrait :** Les adresses IPs ou nœuds pivots abritant les serveurs de commande centraux à neutraliser.
 
 ---
 
@@ -109,7 +118,7 @@ gantt
     *   *Intérêt :* Réflexion cruciale sur le packaging de HGP-Clusterer (API SaaS vs. licence logicielle sur le edge pour les véhicules ou les serveurs locaux).
 *   **14h50 - 15h35 (Conférence Cybersécurité) :** *AI vs. AI: The Race to Secure the Future* (**Purple Stage - Hall 7.3**). Table ronde avec **Hugues Foulon** (CEO de Orange Cyberdefense).
     *   *Intérêt :* Voir comment les modèles mathématiques prédictifs et les IAs autonomes luttent en temps réel contre les menaces.
-*   **14h45 - 16h00 (Pitchs Cibles & Cyber) :** Visite des stands restants (**YellowScan**, **CAD42**, **SSNDT**, **Alithea**, et les exposants Cyber : **Aikido Security**, **Agentur für Innovation**).
+*   **14h45 - 16h00 (Pitchs Cibles & Cyber) :** Visite des stands restants (**YellowScan**, **CAD42**, **SSNDT**, **Alithea**, et les exposants Cyber : **Aikido Security**, **Agentur für Innovation**, **DuoKey**).
 *   **16h00 - 16h30 :** Débriefing final avec toutes les équipes Inria au Food Court.
 *   **Après-midi (Optionnel - Réseau Inria) :** Discours de clôture de **Bruno Sportisse** pour l'atelier *"From Programming to Prompting: What Does Software Development Mean Today?"* (**Workshop Area B - Hall 7.3**).
 
@@ -170,14 +179,21 @@ gantt
 *   **Détails & Synergies :** Ils allouent des budgets de recherche à long terme (10-15 ans) pour la souveraineté technologique (quantique, IA, cryptographie post-quantique, sécurité spatiale).
 *   **Votre intérêt :** Présenter vos approches de modélisation de SAT-solving via Swendsen-Wang sur graphes signés.
 
-### 8. Aikido Security
+### 8. DuoKey SA
+*   **Stand :** **Stand 777** (À localiser via l'application mobile). *Note : DuoKey est une startup suisse spécialisée en cryptographie de sécurité cloud.*
+*   **Objectif :** Cybersécurité / Cryptographie (Objectif N°2).
+*   **Informations clés :** Expert du chiffrement et de la gestion de clés cryptographiques pour le cloud (MPC - Multi-Party Computation).
+*   **Détails & Synergies :** DuoKey développe des protocoles distribués complexes de partage de secrets et de calcul multipartite pour sécuriser Office 365, Salesforce et les environnements cloud. Leurs modèles algorithmiques reposent sur des structures de graphes mathématiques et de l'algèbre avancée.
+*   **Votre intérêt :** Pitcher vos méthodes MCMC de graphes signés et votre dynamique Swendsen-Wang pour l'analyse de réseaux cryptographiques ou la vérification logique.
+
+### 9. Aikido Security
 *   **Stand :** À localiser sur place via l'application mobile.
 *   **Objectif :** Cybersécurité (Objectif N°2 - Vérification logicielle).
 *   **Informations clés :** Solution de sécurité applicative unifiée (SAST/DAST/Cloud).
 *   **Détails & Synergies :** Aikido intègre de nombreux scanners de vulnérabilités et déploie un moteur de tri (*de-noising*) pour éliminer les faux positifs en fonction du contexte de production.
 *   **Votre intérêt :** Discuter des moteurs de détection de vulnérabilités basés sur des solveurs de contraintes logiques (SAT Solving).
 
-### 9. Wise Twin
+### 10. Wise Twin
 *   **Stand :** **Stand 3H14** (Hall 7.3, pavillon IMT - Institut Mines-Télécom). *Note : Ils y exposent sur le thème "transition industrielle+" le jeudi 18 juin.*
 *   **Objectif :** HGP-Clusterer 3D (Jumeaux Numériques).
 *   **Informations clés :** Startup de jumeaux numériques pour le domaine industriel et portuaire.
@@ -185,7 +201,7 @@ gantt
 *   **Douleur client :** Segmenter et classifier automatiquement chaque objet physique (grues, containers, tuyauteries) à partir des points bruts.
 *   **Votre valeur :** HGP-Clusterer 3D permet d'automatiser cette segmentation géométrique sans données d'entraînement.
 
-### 10. RESO3D
+### 11. RESO3D
 *   **Stand :** **Stand 3C14** (Hall 7, pavillon Région Sud). *Note : RESO3D fait partie de la délégation officielle de la Région Sud.*
 *   **Objectif :** LiDAR 3D.
 *   **Informations clés :** Spécialiste de la cartographie 3D de réseaux souterrains.
@@ -193,7 +209,7 @@ gantt
 *   **Douleur client :** Extraire des tuyaux et câbles continus dans des nuages de points fragmentés et bruités par les débris des excavations.
 *   **Votre valeur :** Votre approche d'extraction de réseaux par graphes de centralité et de percolation (Chapitre 12 de la thèse) s'applique directement à l'extraction de structures tubulaires.
 
-### 11. CAD42
+### 12. CAD42
 *   **Stand :** À localiser via l'application mobile officielle (co-exposant possible sur un pavillon BTP/construction ou innovation industrielle).
 *   **Objectif :** LiDAR / Suivi 3D.
 *   **Informations clés :** Suivi 3D en temps réel et sécurité sur chantiers.
@@ -249,8 +265,8 @@ gantt
 ### Pitch B : Détection de Fissures (Pour SSNDT)
 > *"Bonjour, nous développons une technologie d'extraction de structures filaires pour le contrôle non destructif. Contrairement aux approches Deep Learning qui nécessitent des milliers d'images annotées et peinent sur les fissures très fines ou bruitées, notre approche repose sur des modèles géométriques explicites. En étendant le filtre de Frangi sous forme de graphe spatial et en utilisant des métriques de centralité et de percolation, nous extrayons des squelettes de fissures parfaits, même sur des acquisitions multimodales (visible + thermique). Le code est léger, explicite et fonctionne sans phase d'apprentissage."*
 
-### Pitch C : Cybersécurité / Modèles de Graphes (Pour Cyberagentur, Aikido)
-> *"Bonjour, je suis Louis Hauseux, chercheur à l'Inria, et voici Alban, mon associé business. Nos travaux portent sur l'application de la théorie des graphes et des modèles de spin statistiques à la structuration de données bruitées. En cybersécurité, nous appliquons nos modèles de graphes signés (MCMC couplés et percolation) à la résolution ultra-rapide de formules 3-SAT pour la vérification de code et la cryptanalyse, mais aussi à la détection probabiliste de botnets et de mouvements latéraux dans les graphes de flux réseau. Nous cherchons à valider des cas d'usage industriels pour ces modèles mathématiques."*
+### Pitch C : Cybersécurité / Modèles de Graphes (Pour Cyberagentur, Aikido, DuoKey)
+> *"Bonjour, je suis Louis Hauseux, chercheur à l'Inria, et voici Alban, mon associé business. Nos travaux portent sur l'application de la théorie des graphes et des modèles de spin statistiques à la structuration de données bruitées. En cybersécurité, nous appliquons nos modèles de graphes signés (MCMC couplés et percolation) à la résolution ultra-rapide de formules 3-SAT pour la vérification de code et la cryptanalyse algébrique de clés de chiffrement. Nous adaptons également nos complexes de Čech et notre géométrie d'HGP-Clusterer à la détection d'intrusions et de mouvements latéraux sur les graphes de flux réseau, et nos filtres de Frangi spatiaux pour retracer les tunnels de communication de botnets. Nous cherchons à valider des cas d'usage industriels pour ces modèles mathématiques."*
 
 ---
 
