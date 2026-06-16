@@ -1,5 +1,5 @@
 # 🚀 VivaTech 2026 — Programme de Valorisation & Commercialisation
-## 📅 Guide Stratégique pour Louis & son Frère (17–18 Juin 2026)
+## 📅 Guide Stratégique pour Louis & Alban Hauseux (17–18 Juin 2026)
 
 Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de vos présentations. Il structure vos deux jours à VivaTech pour maximiser les chances de succès de votre futur projet avec l'**Inria Startup Studio**, en ciblant les bons partenaires industriels (LiDAR, jumeaux numériques, CNDT, biotech) et en vous préparant aux conférences clés.
 
@@ -58,7 +58,7 @@ gantt
 *   **18h00 - 19h30 :** **Débriefing & Soirée Inria Startup Studio** (Hôtel Eklo Paris Porte de Versailles, *1 Rue du Moulin, 92170 Vanves*).
     *   *18h00 - 18h30 :* Débrief de l'après-midi.
     *   *18h30 - 19h00 :* Présentation du programme Inria Startup Studio.
-    *   *19h00 - 19h30 :* Retours d'expérience de startups DeepTech, de VCs et de partenaires industriels. **(Moment idéal pour votre frère pour discuter du montage financier/business de la future startup !)**
+    *   *19h00 - 19h30 :* Retours d'expérience de startups DeepTech, de VCs et de partenaires industriels. **(Moment idéal pour Alban pour discuter du montage financier/business de la future startup !)**
 
 ---
 
@@ -180,7 +180,7 @@ gantt
 ## 🗣️ Fiches de Pitch Rapide (2 minutes)
 
 ### Pitch A : HGP-Clusterer (Pour Dassault, YellowScan, Wise Twin)
-> *"Bonjour, je suis Louis Hauseux, chercheur à l'Inria et futur fondateur de startup, et voici mon frère et associé business. Dans le traitement de nuages de points LiDAR 3D, tout le monde utilise (H)DBSCAN pour la segmentation d'instances. Mais (H)DBSCAN échoue dès qu'il y a du bruit ou des densités variables : il crée des ponts et fusionne des objets distincts.
+> *"Bonjour, je suis Louis Hauseux, chercheur à l'Inria et futur fondateur de startup, et voici mon frère et associé business, Alban Hauseux. Dans le traitement de nuages de points LiDAR 3D, tout le monde utilise (H)DBSCAN pour la segmentation d'instances. Mais (H)DBSCAN échoue dès qu'il y a du bruit ou des densités variables : il crée des ponts et fusionne des objets distincts.
 > Mes travaux de thèse ont résolu ce problème en généralisant le Single-Linkage avec la géométrie des complexes de Čech et des Delaunay d'ordre K. Notre algorithme, **HGP-Clusterer**, est mathématiquement robuste au bruit et permet d'injecter des contraintes physiques (comme le volume estimé des objets) pour segmenter des scènes LiDAR urbaines ou industrielles sans aucun entraînement profond. Nous voulons proposer cela sous forme d'une API plug-and-play."*
 
 ### Pitch B : Détection de Fissures (Pour SSNDT)
