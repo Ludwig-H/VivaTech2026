@@ -102,7 +102,7 @@ gantt
         *   **YellowScan** (Hall 7.2, près de Mission French Tech) : Systèmes LiDAR embarqués sur drones.
         *   **ALTAMETRIS** (Stand 177) : Filiale de la SNCF d'inspection industrielle par drones et LiDAR (jumeaux numériques).
         *   **Wise Twin** (Stand 3H14) : Jumeaux numériques portuaires/industriels.
-        *   *Repérage* : Localiser le pavillon de **Dassault Systèmes** dans le Hall 7 pour planifier une visite.
+        *   *Repérage* : Repérer le pavillon de la **Software République** (Hall 1, près de Renault Group) et le stand d'**Inria** (Hall 7.2 - Stand 2HG2) pour planifier les rendez-vous Dassault Systèmes.
 *   **18h00 - 19h30 : Débriefing & Soirée Inria Startup Studio** (Hôtel Eklo, *1 Rue du Moulin, 92170 Vanves*)
     *   *18h00 - 18h30* : Débriefing de l'après-midi.
     *   *18h30 - 19h00* : Présentation du programme Inria Startup Studio (financement, mentorat).
@@ -171,9 +171,9 @@ gantt
 ## 🏢 Annuaire des Exposants Cibles (Ordre Décroissant d'Importance)
 
 ### 1. Dassault Systèmes
-*   **Localisation** : À localiser via l'application mobile (Pavillon principal Hall 7).
-*   **Qui ils sont** : Leader mondial des logiciels de CAO 3D et de jumeaux numériques (plateforme 3DEXPERIENCE, CATIA, SOLIDWORKS).
-*   **Synergie Technique (Louis)** : Leurs solutions ingèrent des nuages de points massifs issus de scans LiDAR pour reconstruire des scènes industrielles ou urbaines en 3D. Le clustering et la segmentation d'instances sur ces données y sont des étapes systématiques.
+*   **Localisation** : Hall 1 (Pavillon de la *Software République* / Renault Group) & Hall 7.2 (Stand Inria - 2HG2).
+*   **Qui ils sont** : Leader mondial des logiciels de CAO 3D et de jumeaux numériques (3DEXPERIENCE, CATIA). Présents sur le pavillon de la *Software République* (projet de mobilité d'avenir) et au stand d'Inria pour le consortium de santé **Méditwin France 2030**.
+*   **Synergie Technique (Louis)** : Leurs solutions ingèrent des nuages de points massifs issus de scans LiDAR pour reconstruire des scènes industrielles ou urbaines en 3D. Le clustering et la segmentation d'instances sur ces données y sont des étapes systématiques. Le projet Méditwin est le point de rencontre parfait pour discuter de l'utilisation de HGP-Clusterer dans le cadre Inria x 3DS.
 *   **Intérêt Commercial (Alban)** : Dassault représente le partenaire ou acquéreur stratégique ultime. L'enjeu est de tester leur intérêt pour l'intégration de votre API **HGP-Clusterer** afin de pallier les limites d'HDBSCAN (ponts de bruit) sans nécessiter d'entraînement lourd.
 
 ### 2. Exwayz
