@@ -24,12 +24,15 @@ gantt
     
     section Mercredi 17 Juin
     Arrivée & Accueil LEX Inria        :active, 14:00, 14:30
-    Exploration & Sessions Stands (1) : 14:30, 17:30
+    Yann LeCun (VivaTech Theater)     : 14:30, 14:55
+    Exploration & Sessions Stands (1) : 14:55, 17:30
     Débrief & Conférence Eklo Hotel   : 18:00, 19:30
     
     section Jeudi 18 Juin
     Café Stand Inria                  : 09:30, 09:45
-    Conférences Mkt / DeepTech / Quantum : 09:45, 12:00
+    Conférence Quantum (Pasqal/IBM)   : 09:45, 10:45
+    Conférence From Lab to Market     : 10:45, 11:30
+    Conférence Free Models & Pricing  : 11:30, 12:00
     Déjeuner & Débrief Midi           : 12:00, 13:00
     Briefing & Planification CPPI     : 13:00, 14:00
     Conférence SaaS vs AI (Founders)  : 14:00, 14:45
@@ -46,7 +49,10 @@ gantt
 
 ### 🕒 Emploi du Temps
 *   **14h00 - 14h30 :** Accueil officiel Inria Startup Studio et rencontre des autres doctorants.
-*   **14h30 - 17h30 (Temps Libre - Vos Cibles) :** Visite des exposants orientés **LiDAR/3D** et **Contrôle d'Infrastructures**.
+*   **14h30 - 14h55 (Conférence Recommandée) :** *Beyond Language Models: Building AI that Understands the World* (**VivaTech Theater - Hall 7.3**).
+    *   *Intervenant :* **Yann LeCun** (Meta, AMI Labs) en discussion avec Steven Levy (*Wired*).
+    *   *Intérêt :* Entendre le pionnier du Deep Learning parler des représentations du monde et de la vision par ordinateur, hautement pertinent pour vos méthodes géométriques et vos modèles statistiques non paramétriques.
+*   **14h55 - 17h30 (Temps Libre - Vos Cibles) :** Visite des exposants orientés **LiDAR/3D** et **Contrôle d'Infrastructures**.
     *   *Action :* Allez pitcher **Wise Twin**, **RESO3D** et cherchez le stand de **Dassault Systèmes** (demandez sa localisation exacte à l'accueil ou sur l'application mobile VivaTech).
 *   **17h30 - 18h00 :** Déplacement vers l'hôtel Eklo.
 *   **18h00 - 19h30 :** **Débriefing & Soirée Inria Startup Studio** (Hôtel Eklo Paris Porte de Versailles, *1 Rue du Moulin, 92170 Vanves*).
@@ -62,58 +68,112 @@ gantt
 > Ce deuxième jour est très rythmé, alternez entre les conférences du Founders Area / Purple Stage et vos visites de stands stratégiques.
 
 ### 🕒 Emploi du Temps
-*   **09h30 - 09h45 :** Café réseau au **Stand Inria**.
-*   **09h45 - 10h45 (Conférence Recommandée) :** *Quantum Leap: When Will Quantum Computing Deliver Business Value?* (**Purple Stage**).
-    *   *Intervenants :* Jerry Chow (IBM) & Loïc Henriet (CTO de Pasqal).
-    *   *Intérêt :* Comprendre comment les grands algorithmes et les architectures de calcul intensif se structurent pour le marché B2B.
-*   **10h45 - 11h30 (Conférence Majeure) :** *From Lab to Market* (**Founders Area**).
+*   **09h30 - 09h45 :** Café réseau au **Stand Inria** (réparti sur les stands de Orange, La Poste, Caisse des Dépôts).
+*   **09h45 - 10h45 (Conférence Recommandée) :** *Quantum Leap: When Will Quantum Computing Deliver Business Value?* (**Purple Stage - Hall 7.3**).
+    *   *Intervenants :* Jerry Chow (IBM) & Loïc Henriet (Pasqal).
+    *   *Intérêt :* Comprendre comment les grands algorithmes et les architectures de calcul intensif (comme Pasqal, spin-off académique français à succès) se structurent pour le marché B2B.
+*   **10h10 - 10h30 (Optionnel - Réseau Inria) :** *Signature de l'accord Inria-DFKI* par **Bruno Sportisse** (CEO d'Inria) (**Startup Germany / German Park I**).
+    *   *Intérêt :* Suivre la dynamique institutionnelle franco-allemande de l'Inria et réseauter avec la direction.
+*   **10h45 - 11h30 (Conférence Majeure) :** *From Lab to Market* (**Founders Area - Hall 7.3**).
     *   *Intervenants :* Jacomo Corbo (PhysicsX) et Maximilien Levesque (Aqemia).
     *   *Intérêt :* **PhysicsX** fait du Deep Learning sur des maillages géométriques CAO et **Aqemia** est un spin-off d'Inria/ENS. C'est l'illustration parfaite de votre transition : vendre des algorithmes de pointe (complexes cellulaires, physiques) à l'industrie.
-*   **11h30 - 12h00 :** *Selling When the Model is Free* (**Founders Area**).
+*   **11h30 - 12h00 :** *Selling When the Model is Free* (**Founders Area - Hall 7.3**).
     *   *Intérêt :* Indispensable pour votre modèle open-source / API hybride. Comment valoriser un algorithme mathématique lorsque le code de base est accessible ?
 *   **12h00 - 13h00 :** Déjeuner libre (Food Court) et débriefing de la matinée.
 *   **13h00 - 14h00 :** Session de connexion / Planification des visites avec le CPPI (Inria).
-*   **14h00 - 14h45 (Conférence Recommandée) :** *Will AI Kill the SaaS Business Model by 2030?* (**Founders Area**).
+*   **14h00 - 14h45 (Conférence Recommandée) :** *Will AI Kill the SaaS Business Model by 2030?* (**Founders Area - Hall 7.3**).
     *   *Intérêt :* Réflexion cruciale sur le packaging de HGP-Clusterer (API SaaS vs. licence logicielle sur le edge pour les véhicules ou les serveurs locaux).
 *   **14h45 - 16h00 (Pitchs Cibles) :** Visite des exposants restants (**YellowScan**, **CAD42**, **SSNDT**, **Alithea**).
 *   **16h00 - 16h30 :** Débriefing final avec toutes les équipes Inria au Food Court.
+*   **Après-midi (Optionnel - Réseau Inria) :** Discours de clôture de **Bruno Sportisse** pour l'atelier *"From Programming to Prompting: What Does Software Development Mean Today?"* (**Workshop Area B - Hall 7.3**).
 
 ---
 
-## 🏢 Les Exposants Stratégiques à Rencontrer
+## 🏢 Liste des Exposants Conseillés (Par ordre décroissant d'importance)
 
-### 1. Pour HGP-Clusterer 3D (LiDAR / 3D / Jumeaux Numériques)
+### 1. Dassault Systèmes
+*   **Stand :** À localiser sur place via l'application mobile officielle VivaTech 2026 (souvent dans le pavillon de partenaires industriels ou de la Région Île-de-France).
+*   **Objectif :** HGP-Clusterer 3D (Cible N°1).
+*   **Informations clés :** Leader mondial des logiciels 3D et des jumeaux numériques (3DEXPERIENCE platform). Ils intègrent d'immenses nuages de points LiDAR dans leurs logiciels industriels et urbains pour la modélisation et la détection d'anomalies.
+*   **Douleur client :** Le clustering de nuages de points denses et bruités est difficile avec (H)DBSCAN.
+*   **Votre valeur :** HGP-Clusterer 3D isole parfaitement les géométries complexes sans entraînement et gère les bruits de percolation (ponts de bruit) grâce aux Delaunay d'ordre $K$.
 
-*   **Dassault Systèmes (Stand à localiser via l'application) :**
-    *   *Pourquoi :* Leader mondial de la CAO 3D et des jumeaux numériques. C'est votre **cible N°1**. Ils intègrent des nuages de points LiDAR dans leurs logiciels (CATIA, 3DEXPERIENCE) pour reconstituer des usines, des villes ou des navires.
-    *   *Leur douleur :* Le clustering spatial de nuages de points denses et bruités est difficile avec (H)DBSCAN.
-    *   *Votre solution :* HGP-Clusterer 3D isole parfaitement les géométries complexes sans entraînement et gère les bruits de percolation (ponts de bruit) grâce aux Delaunay d'ordre $K$.
-*   **YellowScan (Stand 2711) :**
-    *   *Pourquoi :* Leader mondial des systèmes LiDAR pour drones. Ils vendent le matériel mais aussi la suite logicielle pour classifier les points (sol, végétation, bâtiments).
-    *   *Leur douleur :* Classifier automatiquement des objets complexes (arbres, lignes électriques, fissures sur pylônes) dans des scènes LiDAR bruyantes.
-    *   *Votre solution :* HGP-Clusterer 3D permet d'injecter des *a priori* de volume et géométriques faibles pour faire de la segmentation d'instances 3D robuste sans base de données d'apprentissage.
-*   **Wise Twin (Stands 2676-2677) :**
-    *   *Pourquoi :* Startup qui développe des jumeaux numériques pour des infrastructures industrielles et portuaires complexes.
-    *   *Leur douleur :* Traiter de grands volumes de scans 3D pour détecter des anomalies ou segmenter des structures.
-*   **RESO3D (Stand 2099) :**
-    *   *Pourquoi :* Spécialistes de la cartographie 3D de réseaux (notamment souterrains).
-    *   *Leur douleur :* Extraire des structures linéaires (tuyaux, câbles) à partir de nuages de points bruités.
-*   **CAD42 (Stand 462) :**
-    *   *Pourquoi :* Suivi 3D en temps réel et gestion de la sécurité sur les chantiers de construction. Intéressant pour votre approche de tracking 4D.
+### 2. YellowScan
+*   **Stand :** **Hall 7, Niveau 7.2**, à côté de "Mission French Tech".
+*   **Objectif :** HGP-Clusterer 3D (Objectif N°1).
+*   **Informations clés :** Leader mondial des systèmes LiDAR pour drones. Ils vendent le matériel mais aussi la suite logicielle pour classifier les points (sol, végétation, lignes électriques, bâtiments).
+*   **Douleur client :** Classifier automatiquement des objets complexes dans des scènes LiDAR bruyantes sans infrastructure d'apprentissage profond lourde.
+*   **Votre valeur :** HGP-Clusterer 3D permet d'injecter des *a priori* géométriques et de volume faibles pour segmenter des instances 3D de manière robuste et sans entraînement.
 
-### 2. Pour la Détection de Fissures (Signal / Image / CNDT)
+### 3. Inria (Startup Studio)
+*   **Stands :** Présent à travers les stands de ses partenaires : **Orange**, **La Poste**, **Caisse des Dépôts**, ainsi qu'au **German Park** et à l'**European Centre for AI Excellence**.
+*   **Objectif :** Parcours Startup Studio (Objectif N°3).
+*   **Informations clés :** L'institut où vous faites votre thèse. C'est l'opportunité de rencontrer l'équipe d'Inria Startup Studio en personne pour concrétiser votre candidature et structurer votre projet de valorisation DeepTech.
 
-*   **SSNDT (Stand 2329) :**
-    *   *Pourquoi :* Acteur spécialisé en "Smart Sensing & Non-Destructive Testing" (Contrôle Non Destructif - CNDT).
-    *   *Leur douleur :* Détecter avec précision des fissures microscopiques sur des pièces métalliques ou du béton avec des images optiques ou thermiques bruitées, sans avoir des millions d'images pour entraîner un réseau de neurones.
-    *   *Votre solution :* Votre algorithme de squelettisation par graphes de Frangi généralisés (Chapitre 12 de votre thèse) fusionne le visible et le thermique (multimodal) et utilise des métriques de centralité sur graphe, garantissant une détection sans base d'apprentissage.
+### 4. Bpifrance
+*   **Stand :** **Stand 2F68** (Hall 7, Niveau 7.2, Business Plaza).
+*   **Objectif :** Financement de la future startup (Objectif N°3).
+*   **Informations clés :** Banque publique d'investissement, financeur numéro 1 de la DeepTech en France. Essentiel pour comprendre les subventions (Bourse French Tech, i-PhD) et les prêts DeepTech adaptés à un spin-off académique.
 
-### 3. Pour l'Assemblage d'Haplotypes (Bio-informatique / Graphes Signés)
+### 5. SSNDT (Smart Sensing and Non-Destructive Testing)
+*   **Stand :** **Stand 2329** (Hall 7).
+*   **Objectif :** Détection de Fissures (Objectif N°2 - Signal/Image).
+*   **Informations clés :** Acteur de l'auscultation d'infrastructures et du contrôle non destructif.
+*   **Douleur client :** Détecter avec précision des micro-fissures sur des matériaux réels (béton, métal) avec des images bruitées (optiques/thermiques) sans base de données d'apprentissage.
+*   **Votre valeur :** Votre squelettisation par graphes de Frangi généralisés (Chapitre 12 de la thèse) fonctionne sans entraînement et fusionne efficacement les modalités visible/thermique.
 
-*   **Alithea Biotechnology GmbH (Stand 156) :**
-    *   *Pourquoi :* Leader du séquençage ARN haut débit. Bien qu'ils fassent de l'ARN, ils gèrent des problématiques complexes de reconstruction de séquences et de bio-informatique.
-    *   *Leur douleur :* L'assemblage de génomes ou de fragments d'acides nucléiques complexes en présence d'erreurs de lecture.
-    *   *Votre solution :* Votre modèle bayésien pour graphes signés (Swendsen-Wang signé et dynamique triangulaire) qui résout l'assemblage d'haplotypes (Sankararaman-Baccelli) dans des régimes très bruités en exploitant la percolation.
+### 6. Alithea Biotechnology GmbH
+*   **Stand :** **Stand 156** (Hall 7).
+*   **Objectif :** Assemblage d'Haplotypes (Objectif N°2 - BioTech).
+*   **Informations clés :** Spécialiste du séquençage d'ARN haut débit (technologie BRB-seq).
+*   **Douleur client :** Reconstruire des séquences et gérer l'assemblage de fragments génomiques complexes sous bruit de lecture.
+*   **Votre valeur :** Votre cadre bayésien de détection de communautés sur graphes signés (MCMC couplés, Chapitre 11.4) qui bat les approches classiques dans les régimes bruités.
+
+### 7. Wise Twin
+*   **Stands :** **Stands 2676-2677** (Hall 7).
+*   **Objectif :** HGP-Clusterer 3D (Jumeaux Numériques).
+*   **Informations clés :** Développe des jumeaux numériques pour des infrastructures portuaires et industrielles. HGP-Clusterer 3D peut être intégré pour automatiser l'isolation d'anomalies de structure (comme votre projet Naval Group).
+
+### 8. RESO3D
+*   **Stand :** **Stand 2099** (Hall 7).
+*   **Objectif :** LiDAR 3D.
+*   **Informations clés :** Spécialiste de la cartographie 3D de réseaux souterrains. Pertinent pour l'extraction de structures linéaires dans des nuages de points bruités.
+
+### 9. CAD42
+*   **Stand :** **Stand 462** (Hall 7).
+*   **Objectif :** LiDAR / Suivi 3D.
+*   **Informations clés :** Suivi 3D en temps réel et sécurité sur chantiers. Synergies avec vos travaux sur le tracking 4D LiDAR (SemanticKITTI).
+
+---
+
+## 🎙️ Liste des Speakers & Conférences (Par ordre décroissant d'importance)
+
+### 1. Jacomo Corbo (PhysicsX) & Maximilien Levesque (Aqemia)
+*   **Conférence :** *From Lab to Market with PhysicsX, Aqemia, Qobly and Connected Circles*
+*   **Date & Heure :** **Jeudi 18 Juin, 10h45 – 11h30**
+*   **Lieu :** **Founders Area (Hall 7.3)**
+*   **Pourquoi :** PhysicsX applique l'IA géométrique avancée aux simulations physiques et industrielles (CAO, maillages). Aqemia est un spin-off d'Inria/ENS à succès. Ils illustrent exactement comment passer d'algorithmes mathématiques complexes (complexes cellulaires, percolation) à une offre commerciale robuste.
+
+### 2. Yann LeCun (Meta, AMI Labs)
+*   **Conférence :** *Beyond Language Models: Building AI that Understands the World* (avec Steven Levy, *Wired*)
+*   **Date & Heure :** **Mercredi 17 Juin, 14h30 – 14h55 CET**
+*   **Lieu :** **VivaTech Theater (Hall 7.3)**
+*   **Pourquoi :** La figure centrale de l'IA en France. Ses idées sur la compréhension géométrique et physique du monde par l'IA font écho à vos travaux sur les modèles non-paramétriques de clustering.
+
+### 3. Bruno Sportisse (CEO d'Inria)
+*   **Événement N°1 :** *Signing of the Franco-German Center on AI / DFKI-Inria Agreement*
+    *   **Date & Heure :** **Jeudi 18 Juin, 10h10 – 10h30**
+    *   **Lieu :** **Startup Germany / German Park I**
+*   **Événement N°2 :** *Closing remarks: From Programming to Prompting*
+    *   **Date & Heure :** **Jeudi 18 Juin, Après-midi**
+    *   **Lieu :** **Workshop Area B (Hall 7.3)**
+*   **Pourquoi :** C'est le dirigeant de votre institut de recherche, très investi dans l'Inria Startup Studio. Idéal pour du réseautage institutionnel.
+
+### 4. Jerry Chow (IBM Quantum) & Loïc Henriet (Pasqal)
+*   **Conférence :** *Quantum leap: when will quantum computing deliver business value?*
+*   **Date & Heure :** **Jeudi 18 Juin, 09h45 – 10h45**
+*   **Lieu :** **Purple Stage (Hall 7.3)**
+*   **Pourquoi :** Pasqal est l'un des plus grands succès français de DeepTech issue de la recherche académique. Intéressant pour comprendre le cycle de vente de technologies de calcul intensif complexes.
 
 ---
 
