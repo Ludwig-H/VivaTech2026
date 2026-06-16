@@ -121,84 +121,84 @@ gantt
 *   **Stand :** À localiser sur place via l'application mobile officielle VivaTech 2026 (ou aux bornes d'information).
 *   **Objectif :** HGP-Clusterer 3D (Cible N°1).
 *   **Informations clés :** Leader mondial des logiciels 3D et des jumeaux numériques (3DEXPERIENCE, CATIA).
-*   **Recherche & Détails :** Leurs solutions industrielles ingèrent des nuages de points massifs issus de scans LiDAR terrestres ou aériens pour reconstruire des scènes industrielles réelles. Ils travaillent activement sur l'intégration de "surrogates physiques" pour simuler le comportement mécanique ou de flux directement sur ces géométries.
-*   **Douleur client :** Le clustering de nuages de points denses et bruités est difficile avec (H)DBSCAN, qui crée des ponts de bruit et requiert un réglage manuel fastidieux des hyperparamètres.
+*   **Détails & Synergies :** Leurs solutions industrielles ingèrent des nuages de points massifs issus de scans LiDAR pour reconstruire des scènes d'usines ou de villes. Ils intègrent des modèles physiques de substitution (surrogates) pour faire de la simulation mécanique en temps réel.
+*   **Douleur client :** Le clustering de nuages de points denses et bruités est laborieux avec (H)DBSCAN.
 *   **Votre valeur :** HGP-Clusterer 3D isole parfaitement les géométries complexes sans entraînement et gère les bruits de percolation (ponts de bruit) grâce aux Delaunay d'ordre $K$.
 
 ### 2. YellowScan
 *   **Stand :** **Hall 7, Niveau 7.2**, à côté de "Mission French Tech".
 *   **Objectif :** HGP-Clusterer 3D (Objectif N°1).
 *   **Informations clés :** Leader mondial des systèmes LiDAR légers embarqués sur drones.
-*   **Recherche & Détails :** YellowScan vend des capteurs matériels haut de gamme et des logiciels comme *CloudStation* pour traiter les nuages de points (calcul de trajectoire, calibration d'intensité, classification). Ils cherchent à automatiser la classification des sols, des bâtiments et de la végétation (foresterie, réseaux électriques).
-*   **Douleur client :** Extraire et segmenter des objets géométriquement complexes (lignes de câbles, pylônes, arbres isolés) dans des données de vol très bruitées.
-*   **Votre valeur :** HGP-Clusterer 3D permet d'injecter des *a priori* géométriques et de volume faibles pour segmenter des instances 3D de manière robuste et sans entraînement.
+*   **Détails & Synergies :** Ils commercialisent la suite logicielle *CloudStation* (ground extraction, végétation, calibration d'intensité). Ils cherchent à automatiser la classification de lignes électriques, de câbles et de pylônes.
+*   **Douleur client :** Extraire et segmenter des objets géométriquement complexes dans des données de vol très bruitées.
+*   **Votre valeur :** HGP-Clusterer 3D permet d'injecter des *a priori* de volume faibles pour segmenter des instances 3D de manière robuste et sans entraînement.
 
 ### 3. Inria (Startup Studio)
 *   **Stands :** Présent à travers les stands de ses partenaires : **Orange**, **La Poste**, **Caisse des Dépôts**, ainsi qu'au **German Park** et à l'**European Centre for AI Excellence**.
 *   **Objectif :** Parcours Startup Studio (Objectif N°3).
 *   **Informations clés :** L'institut national de recherche en sciences et technologies du numérique.
-*   **Recherche & Détails :** Le programme Inria Startup Studio offre un accompagnement complet de 12 à 18 mois pour transformer une recherche académique en startup viable (financement de salaires de co-fondateurs, mentoring, structuration de la propriété intellectuelle).
-*   **Votre intérêt :** Rencontrer l'équipe (Grégoire Maurice, Dylan Chomé, etc.) pour caler votre dossier et discuter des transferts de brevets/logiciels de votre thèse.
+*   **Détails & Synergies :** Le programme Inria Startup Studio offre un accompagnement complet de 12 à 18 mois pour transformer une recherche académique en startup (salaires, mentoring, propriété intellectuelle).
+*   **Votre intérêt :** Rencontrer l'équipe en personne pour cadrer votre candidature.
 
 ### 4. Bpifrance
 *   **Stand :** **Stand 2F68** (Hall 7, Niveau 7.2, Business Plaza).
 *   **Objectif :** Financement de la future startup (Objectif N°3).
 *   **Informations clés :** Banque publique d'investissement française.
-*   **Recherche & Détails :** Bpifrance gère le *Plan Deeptech* national. Ils offrent des subventions et financements de démarrage non dilutifs comme la *Bourse French Tech*, le concours d'innovation *i-PhD* (destiné spécifiquement aux doctorants), et des prêts d'amorçage.
-*   **Votre intérêt :** Alban doit comprendre la structure de ces financements (souvent conditionnés à l'association avec un profil commercial/business).
+*   **Détails & Synergies :** Ils gèrent le *Plan Deeptech* national (Bourse French Tech, concours national *i-PhD*, prêts d'amorçage).
+*   **Votre intérêt :** Alban doit comprendre les critères de ces subventions (association obligatoire recherche + business).
 
 ### 5. SSNDT (Smart Sensing and Non-Destructive Testing)
 *   **Stand :** À localiser via l'application mobile officielle. *Note : Ils co-exposent généralement sur un pavillon thématique d'ingénierie, de contrôle industriel ou de recherche.*
 *   **Objectif :** Détection de Fissures (Objectif N°2 - Signal/Image).
-*   **Informations clés :** Acteur de l'auscultation d'infrastructures et du contrôle non destructif.
-*   **Recherche & Détails :** SSNDT combine des capteurs intelligents et de la vision par ordinateur pour analyser l'état des structures (routes, béton armé, ouvrages d'art).
-*   **Douleur client :** Les approches de Deep Learning classiques échouent sur les micro-fissures peu visibles ou bruitées et exigent des bases d'apprentissage géantes.
+*   **Informations clés :** Acteur de l'auscultation d'infrastructures et du contrôle non destructif (CNDT).
+*   **Détails & Synergies :** Ils développent des standards de sécurité diagnostique pour le génie civil (ex: béton armé) combinant capteurs intelligents et vision.
+*   **Douleur client :** Détecter des micro-fissures peu visibles avec des images bruitées (optiques/thermiques) sans base d'apprentissage géante.
 *   **Votre valeur :** Votre squelettisation par graphes de Frangi généralisés (Chapitre 12 de la thèse) fonctionne sans entraînement et fusionne efficacement les modalités visible/thermique.
 
 ### 6. Alithea Genomics (Alithea Biotechnology GmbH)
 *   **Stand :** Pavillon swisstech / Suisse (à localiser via l'application mobile officielle). *Note : Alithea est une startup suisse basée à Lausanne.*
 *   **Objectif :** Assemblage d'Haplotypes (Objectif N°2 - BioTech).
 *   **Informations clés :** Spécialiste de la transcriptomique haut débit.
-*   **Recherche & Détails :** Inventeurs de la technologie **BRB-seq** (Bulk RNA Barcoding and sequencing) qui permet de marquer (barcoder) individuellement les échantillons d'ARN dès la transcription inverse pour les séquencer en un seul tube (25x moins cher que les méthodes classiques).
-*   **Douleur client :** Reconstruire et assembler des fragments génomiques/ARN bruités ou dégradés à partir de ces lectures massives multiplexées.
-*   **Votre valeur :** Votre cadre bayésien de détection de communautés sur graphes signés (MCMC couplés, Chapitre 11.4) qui résout l'assemblage d'haplotypes dans des régimes très bruités.
+*   **Détails & Synergies :** Inventeurs de la technologie **BRB-seq** (Bulk RNA Barcoding and sequencing) qui marque individuellement les échantillons d'ARN dès la transcription inverse pour les séquencer en un seul tube (25x moins cher).
+*   **Douleur client :** Reconstruire et assembler des fragments génomiques/ARN bruités ou dégradés à partir de ces lectures massives.
+*   **Votre valeur :** Votre cadre bayésien de détection de communautés sur graphes signés (MCMC couplés, Chapitre 11.4) qui résout l'assemblage d'haplotypes sous fort bruit.
 
-### 7. Wise Twin
+### 7. Agentur für Innovation in der Cybersicherheit GmbH (Cyberagentur)
+*   **Stand :** À localiser dans l'espace Allemagne / German Park.
+*   **Objectif :** Cybersécurité (Objectif N°2 - Cyber/SAT).
+*   **Informations clés :** Agence publique allemande finançant la recherche de rupture en cybersécurité.
+*   **Détails & Synergies :** Ils allouent des budgets de recherche à long terme (10-15 ans) pour la souveraineté technologique (quantique, IA, cryptographie post-quantique, sécurité spatiale).
+*   **Votre intérêt :** Présenter vos approches de modélisation de SAT-solving via Swendsen-Wang sur graphes signés.
+
+### 8. Aikido Security
+*   **Stand :** À localiser sur place via l'application mobile.
+*   **Objectif :** Cybersécurité (Objectif N°2 - Vérification logicielle).
+*   **Informations clés :** Solution de sécurité applicative unifiée (SAST/DAST/Cloud).
+*   **Détails & Synergies :** Aikido intègre de nombreux scanners de vulnérabilités et déploie un moteur de tri (*de-noising*) pour éliminer les faux positifs en fonction du contexte de production.
+*   **Votre intérêt :** Discuter des moteurs de détection de vulnérabilités basés sur des solveurs de contraintes logiques (SAT Solving).
+
+### 9. Wise Twin
 *   **Stand :** **Stand 3H14** (Hall 7.3, pavillon IMT - Institut Mines-Télécom). *Note : Ils y exposent sur le thème "transition industrielle+" le jeudi 18 juin.*
 *   **Objectif :** HGP-Clusterer 3D (Jumeaux Numériques).
 *   **Informations clés :** Startup de jumeaux numériques pour le domaine industriel et portuaire.
-*   **Recherche & Détails :** Ils capturent des nuages de points 3D de sites industriels complets pour en faire des modèles géométriques interactifs et en analyser l'évolution temporelle.
+*   **Détails & Synergies :** Ils capturent des nuages de points 3D de sites industriels complets pour en faire des modèles géométriques.
 *   **Douleur client :** Segmenter et classifier automatiquement chaque objet physique (grues, containers, tuyauteries) à partir des points bruts.
 *   **Votre valeur :** HGP-Clusterer 3D permet d'automatiser cette segmentation géométrique sans données d'entraînement.
 
-### 8. RESO3D
+### 10. RESO3D
 *   **Stand :** **Stand 3C14** (Hall 7, pavillon Région Sud). *Note : RESO3D fait partie de la délégation officielle de la Région Sud.*
 *   **Objectif :** LiDAR 3D.
 *   **Informations clés :** Spécialiste de la cartographie 3D de réseaux souterrains.
-*   **Recherche & Détails :** Ils utilisent la photogrammétrie et le scan 3D pour modéliser les réseaux enterrés (canalisations, câblages électriques).
-*   **Douleur client :** Extraire des lignes continues et des tubes géométriques à partir de nuages de points fragmentés et bruités par la poussière ou l'humidité des excavations.
-*   **Votre valeur :** Votre approche d'extraction de réseaux par graphes de centralité et de percolation (Chapitre 12 de la thèse) s'applique directement à l'extraction de canalisations.
+*   **Détails & Synergies :** Ils modélisent les réseaux enterrés (canalisations, câblages) par photogrammétrie et scan 3D.
+*   **Douleur client :** Extraire des tuyaux et câbles continus dans des nuages de points fragmentés et bruités par les débris des excavations.
+*   **Votre valeur :** Votre approche d'extraction de réseaux par graphes de centralité et de percolation (Chapitre 12 de la thèse) s'applique directement à l'extraction de structures tubulaires.
 
-### 9. CAD42
+### 11. CAD42
 *   **Stand :** À localiser via l'application mobile officielle (co-exposant possible sur un pavillon BTP/construction ou innovation industrielle).
 *   **Objectif :** LiDAR / Suivi 3D.
 *   **Informations clés :** Suivi 3D en temps réel et sécurité sur chantiers.
-*   **Recherche & Détails :** CAD42 développe des systèmes embarqués sur grues et engins de chantier (crane anti-collision, détection de piétons) s'appuyant sur des capteurs spatiaux et du tracking temps réel.
+*   **Détails & Synergies :** Ils développent des systèmes anticollision embarqués sur grues s'appuyant sur des capteurs spatiaux et du tracking temps réel.
 *   **Votre intérêt :** Discuter de vos modèles de suivi temporel robuste d'instances 3D/4D (tracking d'instances sur nuages de points).
-
-### 10. Agentur für Innovation in der Cybersicherheit GmbH (Cyberagentur)
-*   **Stand :** À localiser dans l'espace Allemagne / German Park.
-*   **Objectif :** Cybersécurité (Thème Secondaire - Financement).
-*   **Informations clés :** Agence d'innovation allemande pour la cybersécurité.
-*   **Recherche & Détails :** Agence publique qui finance des projets de recherche de rupture (DeepTech, IA, quantique, cryptographie post-quantique) avec un horizon à 10-15 ans. Ils ne font pas de recherche en interne mais allouent des budgets massifs à des consortia académiques/startups.
-*   **Votre intérêt :** Présenter vos approches de modélisation de SAT-solving via Swendsen-Wang sur graphes signés.
-
-### 11. Aikido Security
-*   **Stand :** À localiser sur place via l'application mobile.
-*   **Objectif :** Cybersécurité (Thème Secondaire - Vérification logicielle).
-*   **Informations clés :** Solution unifiée de sécurité applicative (SAST/DAST/Cloud).
-*   **Recherche & Détails :** Aikido intègre de nombreux scanners de vulnérabilités et déploie un moteur de tri (de-noising) pour éliminer les faux positifs et hiérarchiser les alertes en fonction du contexte de production.
-*   **Votre intérêt :** Discuter des moteurs logiques de détection automatique de vulnérabilités logicielles (qui s'appuient sur des solveurs de contraintes SAT).
 
 ---
 
@@ -207,38 +207,36 @@ gantt
 ### 1. Jacomo Corbo (PhysicsX) & Maximilien Levesque (Aqemia)
 *   **Conférence :** *From Lab to Market with PhysicsX, Aqemia, Qobly and Connected Circles*
 *   **Date & Heure :** **Jeudi 18 Juin, 10h45 – 11h30** | **Lieu :** **Founders Area (Hall 7.3)**
-*   **Recherche & Détails :**
-    *   **Jacomo Corbo (PhysicsX) :** Ancien ingénieur en chef de stratégie F1 (Renault Team) et co-fondateur de QuantumBlack (McKinsey). Sa société *PhysicsX* développe des "surrogates IA" pour prédire des simulations de mécanique des fluides (CFD) ou d'éléments finis (FEA) directement à partir de fichiers CAO 3D en quelques secondes, éliminant les goulets d'étranglement de calcul numérique.
-    *   **Maximilien Levesque (Aqemia) :** Ancien professeur de physique théorique (CNRS, ENS, Oxford, Cambridge). *Aqemia* utilise des algorithmes de physique statistique et quantique (résolution de l'équation d'Ornstein-Zernike moléculaire) pour générer ses propres données d'affinités chimiques et guider une IA générative dans la création de médicaments, sans exiger de bases de données d'apprentissage historiques.
-    *   **Pourquoi :** C'est le modèle parfait d'application industrielle de mathématiques de haut niveau (complexes géométriques, physique statistique) vendues sous forme d'API B2B.
+*   **Détails & Synergies :**
+    *   **Jacomo Corbo (PhysicsX) :** Ex-ingénieur en chef stratégie F1 (Renault Team). *PhysicsX* utilise le Deep Learning géométrique (sur meshes/point clouds) pour accélérer par $10\thinspace 000$ les simulations physiques de CAO (CFD, FEA).
+    *   **Maximilien Levesque (Aqemia) :** Ex-CNRS et ENS. *Aqemia* utilise des algorithmes de physique statistique et quantique (équation d'Ornstein-Zernike) pour générer ses propres données d'affinités chimiques et concevoir des médicaments sans données d'entraînement historiques.
+    *   **Pourquoi :** Le modèle absolu à suivre : comment des algorithmes physiques et géométriques complexes se traduisent en API commerciale B2B.
 
 ### 2. Yann LeCun (Meta, AMI Labs)
 *   **Conférence :** *Beyond Language Models: Building AI that Understands the World* (avec Steven Levy, *Wired*)
 *   **Date & Heure :** **Mercredi 17 Juin, 14h30 – 14h55 CET** | **Lieu :** **VivaTech Theater (Hall 7.3)**
-*   **Recherche & Détails :** Chef scientifique de l'IA chez Meta, pionnier des réseaux de neurones convolutifs (CNN) et lauréat du prix Turing. Ses recherches actuelles portent sur le concept de "World Models" (modèles de monde) et l'apprentissage auto-supervisé pour doter les machines d'un sens commun physique et d'une perception spatio-temporelle rigoureuse.
-*   **Pourquoi :** Son point de vue sur la vision par ordinateur et la compréhension géométrique du monde physique est essentiel pour vos travaux sur les modèles non-paramétriques et géométriques.
+*   **Détails & Synergies :** Lauréat du prix Turing et directeur de l'IA chez Meta. Ses recherches sur les *World Models* et la vision auto-supervisée visent à donner aux machines une compréhension spatio-temporelle intuitive du monde.
+*   **Pourquoi :** Son point de vue sur la vision par ordinateur est très proche de vos approches non-paramétriques et de percolation géométrique.
 
 ### 3. Bruno Sportisse (CEO d'Inria)
 *   **Événement N°1 :** *Signing of the Franco-German Center on AI / DFKI-Inria Agreement*
     *   **Date & Heure :** **Jeudi 18 Juin, 10h10 – 10h30** | **Lieu :** **Startup Germany / German Park I**
 *   **Événement N°2 :** *Closing remarks: From Programming to Prompting*
     *   **Date & Heure :** **Jeudi 18 Juin, Après-midi** | **Lieu :** **Workshop Area B (Hall 7.3)**
-*   **Recherche & Détails :** Président-directeur général de l'Inria, ancien conseiller du Premier ministre sur l'innovation et le numérique, chercheur en mathématiques appliquées (calcul scientifique, environnement). Il pilote la stratégie de transfert technologique massif de l'Inria vers les startups (Inria Startup Studio).
-*   **Pourquoi :** Idéal pour du réseautage institutionnel et pour comprendre la vision d'Inria sur l'entrepreneuriat des chercheurs.
+*   **Détails & Synergies :** PDG de l'Inria et mathématicien appliqué. Il pilote la stratégie nationale de valorisation Deeptech d'Inria (Inria Startup Studio).
+*   **Pourquoi :** Indispensable pour votre frère et vous pour comprendre les mécanismes institutionnels et valider votre projet de startup.
 
-### 4. Jerry Chow (IBM Quantum) & Loïc Henriet (Pasqal)
-*   **Conférence :** *Quantum leap: when will quantum computing deliver business value?*
-*   **Date & Heure :** **Jeudi 18 Juin, 09h45 – 10h45** | **Lieu :** **Purple Stage (Hall 7.3)**
-*   **Recherche & Détails :**
-    *   **Jerry Chow (IBM) :** Dirige les architectures de calcul intensif quantique chez IBM.
-    *   **Loïc Henriet (Pasqal) :** CTO de Pasqal, spin-off académique français qui conçoit des processeurs quantiques à atomes neutres (rubidium piégé par pinces optiques). Pasqal est particulièrement connu pour résoudre des problèmes d'optimisation de graphes (comme le Maximum Independent Set) en les projetant directement sur les états physiques de ses atomes.
-    *   **Pourquoi :** Comprendre les cycles de vente de technologies algorithmiques et de calcul de pointe complexes au niveau de grands groupes industriels.
-
-### 5. Hugues Foulon (CEO d'Orange Cyberdefense)
+### 4. Hugues Foulon (CEO d'Orange Cyberdefense)
 *   **Conférence :** *AI vs. AI: The Race to Secure the Future*
 *   **Date & Heure :** **Jeudi 18 Juin, 14h50 – 15h35** | **Lieu :** **Purple Stage (Hall 7.3)**
-*   **Recherche & Détails :** Dirige Orange Cyberdefense, le premier prestataire européen de services de sécurité managés. Ses équipes surveillent les réseaux de milliers d'entreprises mondiales et intègrent l'IA pour la détection automatisée des menaces et des attaques.
-*   **Pourquoi :** Roundtable clé pour comprendre les besoins actuels en termes d'IA prédictive et de détection automatique d'attaques réseau en temps réel.
+*   **Détails & Synergies :** Dirige le premier prestataire européen de sécurité managée. Ses équipes surveillent les réseaux à grande échelle et intègrent l'IA prédictive et la détection d'intrusions.
+*   **Pourquoi :** Roundtable clé pour comprendre les besoins actuels en termes de modèles de détection et de graphes de flux réseau.
+
+### 5. Jerry Chow (IBM Quantum) & Loïc Henriet (Pasqal)
+*   **Conférence :** *Quantum leap: when will quantum computing deliver business value?*
+*   **Date & Heure :** **Jeudi 18 Juin, 09h45 – 10h45** | **Lieu :** **Purple Stage (Hall 7.3)**
+*   **Détails & Synergies :** Jerry Chow gère les architectures quantiques IBM. Loïc Henriet pilote Pasqal, spin-off académique français qui conçoit des processeurs quantiques à atomes neutres. Leurs processeurs résolvent des problèmes complexes d'optimisation de graphes (Maximum Independent Set).
+*   **Pourquoi :** Comprendre comment commercialiser des calculateurs et algorithmes de rupture auprès de grands groupes.
 
 ---
 
