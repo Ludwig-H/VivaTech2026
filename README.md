@@ -8,10 +8,11 @@ Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de 
 ## 🎯 Objectifs de la Visite
 
 1. **HGP-Clusterer 3D (Objectif N°1) :** Valider l'intérêt d'une API de clustering géométrique robuste (alternative à HDBSCAN) pour les acteurs du LiDAR 3D/4D et des jumeaux numériques (Dassault Systèmes, YellowScan, Wise Twin, CAD42).
-2. **Détection de Fissures (Objectif N°2 - Signal/CNDT) :** Rencontrer des acteurs du contrôle non destructif et de la surveillance d'infrastructures (SSNDT) pour tester l'attrait commercial de votre squelettisation par graphes de Frangi.
-3. **Assemblage d'Haplotypes (Objectif N°2 - BioTech) :** Échanger avec des entreprises de séquençage et de bio-informatique (Alithea Biotechnology) sur vos algorithmes de détection de communautés sur graphes signés (MCMC couplés).
-4. **Parcours Inria Startup Studio :** Suivre le programme de la **Learning Expedition (LEX)** de l'Inria et réseauter avec des investisseurs DeepTech (Bpifrance, Elaia, Partech, etc.).
-5. **Cybersécurité (Thème Secondaire) :** Comprendre l'application de vos modèles (graphes signés, MCMC, percolation, robustesse géométrique) aux données cyber (résolution de 3-SAT, détection d'intrusions réseau, threat intelligence).
+2. **Applications Algorithmiques Secondaires (Objectif N°2) :** Valider l'attrait commercial de vos autres modèles théoriques :
+    *   **Détection de Fissures (Signal/CNDT) :** Squelettisation par graphes de Frangi généralisés pour le contrôle d'infrastructures (SSNDT).
+    *   **Assemblage d'Haplotypes (BioTech) :** Détection de communautés sur graphes signés (MCMC couplés) pour le séquençage génomique (Alithea Biotechnology).
+    *   **Cybersécurité :** Application de vos modèles de graphes signés à la résolution 3-SAT (vérification/cryptanalyse) et à la détection d'intrusions réseau (Aikido Security, Cyberagentur).
+3. **Parcours Inria Startup Studio (Objectif N°3) :** Suivre le programme de la **Learning Expedition (LEX)** de l'Inria et réseauter avec des investisseurs DeepTech (Bpifrance, Elaia, Partech, etc.) pour structurer la future startup.
 
 ---
 
