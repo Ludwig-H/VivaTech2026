@@ -11,6 +11,7 @@ Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de 
 2. **Détection de Fissures (Objectif N°2 - Signal/CNDT) :** Rencontrer des acteurs du contrôle non destructif et de la surveillance d'infrastructures (SSNDT) pour tester l'attrait commercial de votre squelettisation par graphes de Frangi.
 3. **Assemblage d'Haplotypes (Objectif N°2 - BioTech) :** Échanger avec des entreprises de séquençage et de bio-informatique (Alithea Biotechnology) sur vos algorithmes de détection de communautés sur graphes signés (MCMC couplés).
 4. **Parcours Inria Startup Studio :** Suivre le programme de la **Learning Expedition (LEX)** de l'Inria et réseauter avec des investisseurs DeepTech (Bpifrance, Elaia, Partech, etc.).
+5. **Cybersécurité (Thème Secondaire) :** Comprendre l'application de vos modèles (graphes signés, MCMC, percolation, robustesse géométrique) aux données cyber (résolution de 3-SAT, détection d'intrusions réseau, threat intelligence).
 
 ---
 
@@ -83,9 +84,32 @@ gantt
 *   **13h00 - 14h00 :** Session de connexion / Planification des visites avec le CPPI (Inria).
 *   **14h00 - 14h45 (Conférence Recommandée) :** *Will AI Kill the SaaS Business Model by 2030?* (**Founders Area - Hall 7.3**).
     *   *Intérêt :* Réflexion cruciale sur le packaging de HGP-Clusterer (API SaaS vs. licence logicielle sur le edge pour les véhicules ou les serveurs locaux).
-*   **14h45 - 16h00 (Pitchs Cibles) :** Visite des exposants restants (**YellowScan**, **CAD42**, **SSNDT**, **Alithea**).
+*   **14h50 - 15h35 (Conférence Cybersécurité) :** *AI vs. AI: The Race to Secure the Future* (**Purple Stage - Hall 7.3**). Table ronde avec **Hugues Foulon** (CEO de Orange Cyberdefense).
+    *   *Intérêt :* Voir comment les modèles mathématiques prédictifs et les IAs autonomes luttent en temps réel contre les menaces.
+*   **14h45 - 16h00 (Pitchs Cibles & Cyber) :** Visite des stands restants (**YellowScan**, **CAD42**, **SSNDT**, **Alithea**, et les exposants Cyber : **Aikido Security**, **Agentur für Innovation**).
 *   **16h00 - 16h30 :** Débriefing final avec toutes les équipes Inria au Food Court.
 *   **Après-midi (Optionnel - Réseau Inria) :** Discours de clôture de **Bruno Sportisse** pour l'atelier *"From Programming to Prompting: What Does Software Development Mean Today?"* (**Workshop Area B - Hall 7.3**).
+
+---
+
+## 🔒 Thème de Recherche Secondaire : Cybersécurité & Graphes
+
+Vos travaux de thèse sur les graphes signés, la percolation et le clustering hiérarchique trouvent des applications directes dans le domaine de la cybersécurité. Voici comment vos modèles s'appliquent à ces données :
+
+### A. Résolution du problème 3-SAT (Vérification formelle et Cryptanalyse)
+*   **Données techniques :** Formules logiques CNF modélisant des propriétés de sécurité de logiciels (vérification de smart contracts, protocoles) ou des équations cryptographiques (collisions de hashs, clés privées).
+*   **Modèles mathématiques :** Encodage de $3\text{-SAT}$ sous forme de graphes/hypergraphes signés. Introduction d'un nœud de référence $T$ (True) et construction de liens triangulaires (littéraux) et tétraédriques (avec $T$), où les signes encodent la logique de la clause. Résoudre la formule équivaut à minimiser l'énergie d'un modèle de spin (Spin Glass Ground State) via votre dynamique de Swendsen-Wang signée / triangulaire.
+*   **Ce qu'on extrait :** Une affectation qui satisfait toutes les clauses, permettant de prouver la sécurité ou d'extraire un exploit (vulnérabilité).
+
+### B. Détection d'Intrusions Réseau et Mouvements Latéraux
+*   **Données techniques :** Graphes de flux réseaux (NetFlows) et graphes d'authentification (Active Directory) où les nœuds sont des utilisateurs/machines et les arêtes sont des connexions.
+*   **Modèles mathématiques :** Stochastic Block Models (SBM) ou corrélation d'activités (attraction/répulsion). Utilisation de méthodes de percolation pour distinguer les bruits de fond du réseau (percolant) des attaques ciblées (isolées sous forme de petites communautés denses).
+*   **Ce qu'on extrait :** Des sous-graphes d'anomalies représentant des botnets ou des mouvements latéraux.
+
+### C. Classification de Malwares (Threat Intelligence)
+*   **Données techniques :** Indicateurs de compromission (IOCs : signatures, appels API, clés de registre modifiées) partagés entre différents échantillons.
+*   **Modèles mathématiques :** Correlation Clustering sur graphes signés (positif si IOCs partagés, négatif si comportements incompatibles). Votre algorithme MCMC probabiliste sur graphes signés permet de partitionner efficacement ces échantillons.
+*   **Ce qu'on extrait :** Des familles de malwares (campagnes d'attaques coordonnées).
 
 ---
 
@@ -144,6 +168,16 @@ gantt
 *   **Objectif :** LiDAR / Suivi 3D.
 *   **Informations clés :** Suivi 3D en temps réel et sécurité sur chantiers. Synergies avec vos travaux sur le tracking 4D LiDAR (SemanticKITTI).
 
+### 10. Agentur für Innovation in der Cybersicherheit GmbH (Cyberagentur)
+*   **Stand :** À localiser dans l'espace Allemagne / German Park.
+*   **Objectif :** Cybersécurité (Thème Secondaire - Financement).
+*   **Informations clés :** Agence d'innovation allemande pour la cybersécurité. Ils financent des projets de recherche de pointe et des startups DeepTech appliquées à la cyber-défense. Très pertinent pour pitcher vos algorithmes de résolution 3-SAT.
+
+### 11. Aikido Security
+*   **Stand :** À localiser sur place via l'application mobile.
+*   **Objectif :** Cybersécurité (Thème Secondaire - Vérification logicielle).
+*   **Informations clés :** Startup de cybersécurité axée sur la détection automatique des vulnérabilités de code et des dépendances pour les développeurs. Intéressant pour discuter des moteurs logiques de détection (SAT Solving).
+
 ---
 
 ## 🎙️ Liste des Speakers & Conférences (Par ordre décroissant d'importance)
@@ -175,6 +209,12 @@ gantt
 *   **Lieu :** **Purple Stage (Hall 7.3)**
 *   **Pourquoi :** Pasqal est l'un des plus grands succès français de DeepTech issue de la recherche académique. Intéressant pour comprendre le cycle de vente de technologies de calcul intensif complexes.
 
+### 5. Hugues Foulon (CEO d'Orange Cyberdefense)
+*   **Conférence :** *AI vs. AI: The Race to Secure the Future*
+*   **Date & Heure :** **Jeudi 18 Juin, 14h50 – 15h35**
+*   **Lieu :** **Purple Stage (Hall 7.3)**
+*   **Pourquoi :** Table ronde clé avec le leader de la cyber-défense en France pour comprendre les besoins actuels en termes d'IA prédictive et de détection automatique d'attaques en temps réel.
+
 ---
 
 ## 🗣️ Fiches de Pitch Rapide (2 minutes)
@@ -185,6 +225,9 @@ gantt
 
 ### Pitch B : Détection de Fissures (Pour SSNDT)
 > *"Bonjour, nous développons une technologie d'extraction de structures filaires pour le contrôle non destructif. Contrairement aux approches Deep Learning qui nécessitent des milliers d'images annotées et peinent sur les fissures très fines ou bruitées, notre approche repose sur des modèles géométriques explicites. En étendant le filtre de Frangi sous forme de graphe spatial et en utilisant des métriques de centralité et de percolation, nous extrayons des squelettes de fissures parfaits, même sur des acquisitions multimodales (visible + thermique). Le code est léger, explicite et fonctionne sans phase d'apprentissage."*
+
+### Pitch C : Cybersécurité / Modèles de Graphes (Pour Cyberagentur, Aikido)
+> *"Bonjour, je suis Louis Hauseux, chercheur à l'Inria, et voici Alban, mon associé business. Nos travaux portent sur l'application de la théorie des graphes et des modèles de spin statistiques à la structuration de données bruitées. En cybersécurité, nous appliquons nos modèles de graphes signés (MCMC couplés et percolation) à la résolution ultra-rapide de formules 3-SAT pour la vérification de code et la cryptanalyse, mais aussi à la détection probabiliste de botnets et de mouvements latéraux dans les graphes de flux réseau. Nous cherchons à valider des cas d'usage industriels pour ces modèles mathématiques."*
 
 ---
 
