@@ -1,7 +1,7 @@
 # 🚀 VivaTech 2026 — Programme de Valorisation & Commercialisation
 ## 📅 Guide Stratégique pour Louis & Alban Hauseux (17–18 Juin 2026)
 
-Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de vos présentations. Il structure vos deux jours à VivaTech pour maximiser les chances de succès de votre futur projet avec l'**Inria Startup Studio**, en ciblant les bons partenaires industriels (LiDAR, jumeaux numériques, CNDT, biotech) et en vous préparant aux conférences clés.
+Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de vos présentations. Il structure vos deux jours à VivaTech pour maximiser les chances de succès de votre futur projet avec l'**Inria Startup Studio**, en ciblant les bons partenaires industriels (LiDAR, jumeaux numériques, CNDT, biotech, cyber) et en vous préparant aux conférences clés.
 
 ---
 
@@ -13,6 +13,27 @@ Ce guide a été conçu sur-mesure à partir de votre manuscrit de thèse et de 
     *   **Assemblage d'Haplotypes (BioTech) :** Détection de communautés sur graphes signés (MCMC couplés) pour le séquençage génomique (Alithea Biotechnology).
     *   **Cybersécurité :** Application de vos modèles de graphes signés à la résolution 3-SAT (vérification/cryptanalyse) et à la détection d'intrusions réseau (Aikido Security, Cyberagentur).
 3. **Parcours Inria Startup Studio (Objectif N°3) :** Suivre le programme de la **Learning Expedition (LEX)** de l'Inria et réseauter avec des investisseurs DeepTech (Bpifrance, Elaia, Partech, etc.) pour structurer la future startup.
+
+---
+
+## 🔒 Thème de Recherche Secondaire : Cybersécurité & Graphes
+
+Vos travaux de thèse sur les graphes signés, la percolation et le clustering hiérarchique trouvent des applications directes dans le domaine de la cybersécurité. Voici comment vos modèles s'appliquent à ces données :
+
+### A. Résolution du problème 3-SAT (Vérification formelle et Cryptanalyse)
+*   **Données techniques :** Formules logiques CNF modélisant des propriétés de sécurité de logiciels (vérification de smart contracts, protocoles) ou des équations cryptographiques (collisions de hashs, clés privées).
+*   **Modèles mathématiques :** Encodage de $3\text{-SAT}$ sous forme de graphes/hypergraphes signés. Introduction d'un nœud de référence $T$ (True) et construction de liens triangulaires (littéraux) et tétraédriques (avec $T$), où les signes encodent la logique de la clause. Résoudre la formule équivaut à minimiser l'énergie d'un modèle de spin (Spin Glass Ground State) via votre dynamique de Swendsen-Wang signée / triangulaire.
+*   **Ce qu'on extrait :** Une affectation qui satisfait toutes les clauses, permettant de prouver la sécurité ou d'extraire un exploit (vulnérabilité).
+
+### B. Détection d'Intrusions Réseau et Mouvements Latéraux
+*   **Données techniques :** Graphes de flux réseaux (NetFlows) et graphes d'authentification (Active Directory) où les nœuds sont des utilisateurs/machines et les arêtes sont des connexions.
+*   **Modèles mathématiques :** Stochastic Block Models (SBM) ou corrélation d'activités (attraction/répulsion). Utilisation de méthodes de percolation pour distinguer les bruits de fond du réseau (percolant) des attaques ciblées (isolées sous forme de petites communautés denses).
+*   **Ce qu'on extrait :** Des sous-graphes d'anomalies représentant des botnets ou des mouvements latéraux.
+
+### C. Classification de Malwares (Threat Intelligence)
+*   **Données techniques :** Indicateurs de compromission (IOCs : signatures, appels API, clés de registre modifiées) partagés entre différents échantillons.
+*   **Modèles mathématiques :** Correlation Clustering sur graphes signés (positif si IOCs partagés, négatif si comportements incompatibles). Votre algorithme MCMC probabiliste sur graphes signés permet de partitionner efficacement ces échantillons.
+*   **Ce qu'on extrait :** Des familles de malwares (campagnes d'attaques coordonnées).
 
 ---
 
@@ -38,6 +59,7 @@ gantt
     Déjeuner & Débrief Midi           : 12:00, 13:00
     Briefing & Planification CPPI     : 13:00, 14:00
     Conférence SaaS vs AI (Founders)  : 14:00, 14:45
+    Conférence Cyber (Orange Cyber)   : 14:50, 15:35
     Pitchs Exposants Cibles (2)       : 14:45, 16:00
     Débrief Final LEX                 : 16:00, 16:30
 ```
@@ -93,91 +115,90 @@ gantt
 
 ---
 
-## 🔒 Thème de Recherche Secondaire : Cybersécurité & Graphes
-
-Vos travaux de thèse sur les graphes signés, la percolation et le clustering hiérarchique trouvent des applications directes dans le domaine de la cybersécurité. Voici comment vos modèles s'appliquent à ces données :
-
-### A. Résolution du problème 3-SAT (Vérification formelle et Cryptanalyse)
-*   **Données techniques :** Formules logiques CNF modélisant des propriétés de sécurité de logiciels (vérification de smart contracts, protocoles) ou des équations cryptographiques (collisions de hashs, clés privées).
-*   **Modèles mathématiques :** Encodage de $3\text{-SAT}$ sous forme de graphes/hypergraphes signés. Introduction d'un nœud de référence $T$ (True) et construction de liens triangulaires (littéraux) et tétraédriques (avec $T$), où les signes encodent la logique de la clause. Résoudre la formule équivaut à minimiser l'énergie d'un modèle de spin (Spin Glass Ground State) via votre dynamique de Swendsen-Wang signée / triangulaire.
-*   **Ce qu'on extrait :** Une affectation qui satisfait toutes les clauses, permettant de prouver la sécurité ou d'extraire un exploit (vulnérabilité).
-
-### B. Détection d'Intrusions Réseau et Mouvements Latéraux
-*   **Données techniques :** Graphes de flux réseaux (NetFlows) et graphes d'authentification (Active Directory) où les nœuds sont des utilisateurs/machines et les arêtes sont des connexions.
-*   **Modèles mathématiques :** Stochastic Block Models (SBM) ou corrélation d'activités (attraction/répulsion). Utilisation de méthodes de percolation pour distinguer les bruits de fond du réseau (percolant) des attaques ciblées (isolées sous forme de petites communautés denses).
-*   **Ce qu'on extrait :** Des sous-graphes d'anomalies représentant des botnets ou des mouvements latéraux.
-
-### C. Classification de Malwares (Threat Intelligence)
-*   **Données techniques :** Indicateurs de compromission (IOCs : signatures, appels API, clés de registre modifiées) partagés entre différents échantillons.
-*   **Modèles mathématiques :** Correlation Clustering sur graphes signés (positif si IOCs partagés, négatif si comportements incompatibles). Votre algorithme MCMC probabiliste sur graphes signés permet de partitionner efficacement ces échantillons.
-*   **Ce qu'on extrait :** Des familles de malwares (campagnes d'attaques coordonnées).
-
----
-
 ## 🏢 Liste des Exposants Conseillés (Par ordre décroissant d'importance)
 
 ### 1. Dassault Systèmes
-*   **Stand :** À localiser sur place via l'application mobile officielle VivaTech 2026 (ou aux bornes d'information). *Note : Dassault Systèmes n'a pas de stand individuel répertorié dans la liste principale et co-expose généralement au sein de pavillons de grands partenaires industriels ou de la Région Île-de-France.*
+*   **Stand :** À localiser sur place via l'application mobile officielle VivaTech 2026 (ou aux bornes d'information).
 *   **Objectif :** HGP-Clusterer 3D (Cible N°1).
-*   **Informations clés :** Leader mondial des logiciels 3D et des jumeaux numériques (3DEXPERIENCE platform). Ils intègrent d'immenses nuages de points LiDAR dans leurs logiciels industriels et urbains pour la modélisation et la détection d'anomalies.
-*   **Douleur client :** Le clustering de nuages de points denses et bruités est difficile avec (H)DBSCAN.
+*   **Informations clés :** Leader mondial des logiciels 3D et des jumeaux numériques (3DEXPERIENCE, CATIA).
+*   **Recherche & Détails :** Leurs solutions industrielles ingèrent des nuages de points massifs issus de scans LiDAR terrestres ou aériens pour reconstruire des scènes industrielles réelles. Ils travaillent activement sur l'intégration de "surrogates physiques" pour simuler le comportement mécanique ou de flux directement sur ces géométries.
+*   **Douleur client :** Le clustering de nuages de points denses et bruités est difficile avec (H)DBSCAN, qui crée des ponts de bruit et requiert un réglage manuel fastidieux des hyperparamètres.
 *   **Votre valeur :** HGP-Clusterer 3D isole parfaitement les géométries complexes sans entraînement et gère les bruits de percolation (ponts de bruit) grâce aux Delaunay d'ordre $K$.
 
 ### 2. YellowScan
 *   **Stand :** **Hall 7, Niveau 7.2**, à côté de "Mission French Tech".
 *   **Objectif :** HGP-Clusterer 3D (Objectif N°1).
-*   **Informations clés :** Leader mondial des systèmes LiDAR pour drones. Ils vendent le matériel mais aussi la suite logicielle pour classifier les points (sol, végétation, lignes électriques, bâtiments).
-*   **Douleur client :** Classifier automatiquement des objets complexes dans des scènes LiDAR bruyantes sans infrastructure d'apprentissage profond lourde.
+*   **Informations clés :** Leader mondial des systèmes LiDAR légers embarqués sur drones.
+*   **Recherche & Détails :** YellowScan vend des capteurs matériels haut de gamme et des logiciels comme *CloudStation* pour traiter les nuages de points (calcul de trajectoire, calibration d'intensité, classification). Ils cherchent à automatiser la classification des sols, des bâtiments et de la végétation (foresterie, réseaux électriques).
+*   **Douleur client :** Extraire et segmenter des objets géométriquement complexes (lignes de câbles, pylônes, arbres isolés) dans des données de vol très bruitées.
 *   **Votre valeur :** HGP-Clusterer 3D permet d'injecter des *a priori* géométriques et de volume faibles pour segmenter des instances 3D de manière robuste et sans entraînement.
 
 ### 3. Inria (Startup Studio)
 *   **Stands :** Présent à travers les stands de ses partenaires : **Orange**, **La Poste**, **Caisse des Dépôts**, ainsi qu'au **German Park** et à l'**European Centre for AI Excellence**.
 *   **Objectif :** Parcours Startup Studio (Objectif N°3).
-*   **Informations clés :** L'institut où vous faites votre thèse. C'est l'opportunité de rencontrer l'équipe d'Inria Startup Studio en personne pour concrétiser votre candidature et structurer votre projet de valorisation DeepTech.
+*   **Informations clés :** L'institut national de recherche en sciences et technologies du numérique.
+*   **Recherche & Détails :** Le programme Inria Startup Studio offre un accompagnement complet de 12 à 18 mois pour transformer une recherche académique en startup viable (financement de salaires de co-fondateurs, mentoring, structuration de la propriété intellectuelle).
+*   **Votre intérêt :** Rencontrer l'équipe (Grégoire Maurice, Dylan Chomé, etc.) pour caler votre dossier et discuter des transferts de brevets/logiciels de votre thèse.
 
 ### 4. Bpifrance
 *   **Stand :** **Stand 2F68** (Hall 7, Niveau 7.2, Business Plaza).
 *   **Objectif :** Financement de la future startup (Objectif N°3).
-*   **Informations clés :** Banque publique d'investissement, financeur numéro 1 de la DeepTech en France. Essentiel pour comprendre les subventions (Bourse French Tech, i-PhD) et les prêts DeepTech adaptés à un spin-off académique.
+*   **Informations clés :** Banque publique d'investissement française.
+*   **Recherche & Détails :** Bpifrance gère le *Plan Deeptech* national. Ils offrent des subventions et financements de démarrage non dilutifs comme la *Bourse French Tech*, le concours d'innovation *i-PhD* (destiné spécifiquement aux doctorants), et des prêts d'amorçage.
+*   **Votre intérêt :** Alban doit comprendre la structure de ces financements (souvent conditionnés à l'association avec un profil commercial/business).
 
 ### 5. SSNDT (Smart Sensing and Non-Destructive Testing)
 *   **Stand :** À localiser via l'application mobile officielle. *Note : Ils co-exposent généralement sur un pavillon thématique d'ingénierie, de contrôle industriel ou de recherche.*
 *   **Objectif :** Détection de Fissures (Objectif N°2 - Signal/Image).
 *   **Informations clés :** Acteur de l'auscultation d'infrastructures et du contrôle non destructif.
-*   **Douleur client :** Détecter avec précision des micro-fissures sur des matériaux réels (béton, métal) avec des images bruitées (optiques/thermiques) sans base de données d'apprentissage.
+*   **Recherche & Détails :** SSNDT combine des capteurs intelligents et de la vision par ordinateur pour analyser l'état des structures (routes, béton armé, ouvrages d'art).
+*   **Douleur client :** Les approches de Deep Learning classiques échouent sur les micro-fissures peu visibles ou bruitées et exigent des bases d'apprentissage géantes.
 *   **Votre valeur :** Votre squelettisation par graphes de Frangi généralisés (Chapitre 12 de la thèse) fonctionne sans entraînement et fusionne efficacement les modalités visible/thermique.
 
-### 6. Alithea Biotechnology GmbH
+### 6. Alithea Genomics (Alithea Biotechnology GmbH)
 *   **Stand :** Pavillon swisstech / Suisse (à localiser via l'application mobile officielle). *Note : Alithea est une startup suisse basée à Lausanne.*
 *   **Objectif :** Assemblage d'Haplotypes (Objectif N°2 - BioTech).
-*   **Informations clés :** Spécialiste du séquençage d'ARN haut débit (technologie BRB-seq).
-*   **Douleur client :** Reconstruire des séquences et gérer l'assemblage de fragments génomiques complexes sous bruit de lecture.
-*   **Votre valeur :** Votre cadre bayésien de détection de communautés sur graphes signés (MCMC couplés, Chapitre 11.4) qui bat les approches classiques dans les régimes bruités.
+*   **Informations clés :** Spécialiste de la transcriptomique haut débit.
+*   **Recherche & Détails :** Inventeurs de la technologie **BRB-seq** (Bulk RNA Barcoding and sequencing) qui permet de marquer (barcoder) individuellement les échantillons d'ARN dès la transcription inverse pour les séquencer en un seul tube (25x moins cher que les méthodes classiques).
+*   **Douleur client :** Reconstruire et assembler des fragments génomiques/ARN bruités ou dégradés à partir de ces lectures massives multiplexées.
+*   **Votre valeur :** Votre cadre bayésien de détection de communautés sur graphes signés (MCMC couplés, Chapitre 11.4) qui résout l'assemblage d'haplotypes dans des régimes très bruités.
 
 ### 7. Wise Twin
 *   **Stand :** **Stand 3H14** (Hall 7.3, pavillon IMT - Institut Mines-Télécom). *Note : Ils y exposent sur le thème "transition industrielle+" le jeudi 18 juin.*
 *   **Objectif :** HGP-Clusterer 3D (Jumeaux Numériques).
-*   **Informations clés :** Développe des jumeaux numériques pour des infrastructures portuaires et industrielles. HGP-Clusterer 3D peut être intégré pour automatiser l'isolation d'anomalies de structure (comme votre projet Naval Group).
+*   **Informations clés :** Startup de jumeaux numériques pour le domaine industriel et portuaire.
+*   **Recherche & Détails :** Ils capturent des nuages de points 3D de sites industriels complets pour en faire des modèles géométriques interactifs et en analyser l'évolution temporelle.
+*   **Douleur client :** Segmenter et classifier automatiquement chaque objet physique (grues, containers, tuyauteries) à partir des points bruts.
+*   **Votre valeur :** HGP-Clusterer 3D permet d'automatiser cette segmentation géométrique sans données d'entraînement.
 
 ### 8. RESO3D
 *   **Stand :** **Stand 3C14** (Hall 7, pavillon Région Sud). *Note : RESO3D fait partie de la délégation officielle de la Région Sud.*
 *   **Objectif :** LiDAR 3D.
-*   **Informations clés :** Spécialiste de la cartographie 3D de réseaux souterrains. Pertinent pour l'extraction de structures linéaires dans des nuages de points bruités.
+*   **Informations clés :** Spécialiste de la cartographie 3D de réseaux souterrains.
+*   **Recherche & Détails :** Ils utilisent la photogrammétrie et le scan 3D pour modéliser les réseaux enterrés (canalisations, câblages électriques).
+*   **Douleur client :** Extraire des lignes continues et des tubes géométriques à partir de nuages de points fragmentés et bruités par la poussière ou l'humidité des excavations.
+*   **Votre valeur :** Votre approche d'extraction de réseaux par graphes de centralité et de percolation (Chapitre 12 de la thèse) s'applique directement à l'extraction de canalisations.
 
 ### 9. CAD42
 *   **Stand :** À localiser via l'application mobile officielle (co-exposant possible sur un pavillon BTP/construction ou innovation industrielle).
 *   **Objectif :** LiDAR / Suivi 3D.
-*   **Informations clés :** Suivi 3D en temps réel et sécurité sur chantiers. Synergies avec vos travaux sur le tracking 4D LiDAR (SemanticKITTI).
+*   **Informations clés :** Suivi 3D en temps réel et sécurité sur chantiers.
+*   **Recherche & Détails :** CAD42 développe des systèmes embarqués sur grues et engins de chantier (crane anti-collision, détection de piétons) s'appuyant sur des capteurs spatiaux et du tracking temps réel.
+*   **Votre intérêt :** Discuter de vos modèles de suivi temporel robuste d'instances 3D/4D (tracking d'instances sur nuages de points).
 
 ### 10. Agentur für Innovation in der Cybersicherheit GmbH (Cyberagentur)
 *   **Stand :** À localiser dans l'espace Allemagne / German Park.
 *   **Objectif :** Cybersécurité (Thème Secondaire - Financement).
-*   **Informations clés :** Agence d'innovation allemande pour la cybersécurité. Ils financent des projets de recherche de pointe et des startups DeepTech appliquées à la cyber-défense. Très pertinent pour pitcher vos algorithmes de résolution 3-SAT.
+*   **Informations clés :** Agence d'innovation allemande pour la cybersécurité.
+*   **Recherche & Détails :** Agence publique qui finance des projets de recherche de rupture (DeepTech, IA, quantique, cryptographie post-quantique) avec un horizon à 10-15 ans. Ils ne font pas de recherche en interne mais allouent des budgets massifs à des consortia académiques/startups.
+*   **Votre intérêt :** Présenter vos approches de modélisation de SAT-solving via Swendsen-Wang sur graphes signés.
 
 ### 11. Aikido Security
 *   **Stand :** À localiser sur place via l'application mobile.
 *   **Objectif :** Cybersécurité (Thème Secondaire - Vérification logicielle).
-*   **Informations clés :** Startup de cybersécurité axée sur la détection automatique des vulnérabilités de code et des dépendances pour les développeurs. Intéressant pour discuter des moteurs logiques de détection (SAT Solving).
+*   **Informations clés :** Solution unifiée de sécurité applicative (SAST/DAST/Cloud).
+*   **Recherche & Détails :** Aikido intègre de nombreux scanners de vulnérabilités et déploie un moteur de tri (de-noising) pour éliminer les faux positifs et hiérarchiser les alertes en fonction du contexte de production.
+*   **Votre intérêt :** Discuter des moteurs logiques de détection automatique de vulnérabilités logicielles (qui s'appuient sur des solveurs de contraintes SAT).
 
 ---
 
@@ -185,36 +206,39 @@ Vos travaux de thèse sur les graphes signés, la percolation et le clustering h
 
 ### 1. Jacomo Corbo (PhysicsX) & Maximilien Levesque (Aqemia)
 *   **Conférence :** *From Lab to Market with PhysicsX, Aqemia, Qobly and Connected Circles*
-*   **Date & Heure :** **Jeudi 18 Juin, 10h45 – 11h30**
-*   **Lieu :** **Founders Area (Hall 7.3)**
-*   **Pourquoi :** PhysicsX applique l'IA géométrique avancée aux simulations physiques et industrielles (CAO, maillages). Aqemia est un spin-off d'Inria/ENS à succès. Ils illustrent exactement comment passer d'algorithmes mathématiques complexes (complexes cellulaires, percolation) à une offre commerciale robuste.
+*   **Date & Heure :** **Jeudi 18 Juin, 10h45 – 11h30** | **Lieu :** **Founders Area (Hall 7.3)**
+*   **Recherche & Détails :**
+    *   **Jacomo Corbo (PhysicsX) :** Ancien ingénieur en chef de stratégie F1 (Renault Team) et co-fondateur de QuantumBlack (McKinsey). Sa société *PhysicsX* développe des "surrogates IA" pour prédire des simulations de mécanique des fluides (CFD) ou d'éléments finis (FEA) directement à partir de fichiers CAO 3D en quelques secondes, éliminant les goulets d'étranglement de calcul numérique.
+    *   **Maximilien Levesque (Aqemia) :** Ancien professeur de physique théorique (CNRS, ENS, Oxford, Cambridge). *Aqemia* utilise des algorithmes de physique statistique et quantique (résolution de l'équation d'Ornstein-Zernike moléculaire) pour générer ses propres données d'affinités chimiques et guider une IA générative dans la création de médicaments, sans exiger de bases de données d'apprentissage historiques.
+    *   **Pourquoi :** C'est le modèle parfait d'application industrielle de mathématiques de haut niveau (complexes géométriques, physique statistique) vendues sous forme d'API B2B.
 
 ### 2. Yann LeCun (Meta, AMI Labs)
 *   **Conférence :** *Beyond Language Models: Building AI that Understands the World* (avec Steven Levy, *Wired*)
-*   **Date & Heure :** **Mercredi 17 Juin, 14h30 – 14h55 CET**
-*   **Lieu :** **VivaTech Theater (Hall 7.3)**
-*   **Pourquoi :** La figure centrale de l'IA en France. Ses idées sur la compréhension géométrique et physique du monde par l'IA font écho à vos travaux sur les modèles non-paramétriques de clustering.
+*   **Date & Heure :** **Mercredi 17 Juin, 14h30 – 14h55 CET** | **Lieu :** **VivaTech Theater (Hall 7.3)**
+*   **Recherche & Détails :** Chef scientifique de l'IA chez Meta, pionnier des réseaux de neurones convolutifs (CNN) et lauréat du prix Turing. Ses recherches actuelles portent sur le concept de "World Models" (modèles de monde) et l'apprentissage auto-supervisé pour doter les machines d'un sens commun physique et d'une perception spatio-temporelle rigoureuse.
+*   **Pourquoi :** Son point de vue sur la vision par ordinateur et la compréhension géométrique du monde physique est essentiel pour vos travaux sur les modèles non-paramétriques et géométriques.
 
 ### 3. Bruno Sportisse (CEO d'Inria)
 *   **Événement N°1 :** *Signing of the Franco-German Center on AI / DFKI-Inria Agreement*
-    *   **Date & Heure :** **Jeudi 18 Juin, 10h10 – 10h30**
-    *   **Lieu :** **Startup Germany / German Park I**
+    *   **Date & Heure :** **Jeudi 18 Juin, 10h10 – 10h30** | **Lieu :** **Startup Germany / German Park I**
 *   **Événement N°2 :** *Closing remarks: From Programming to Prompting*
-    *   **Date & Heure :** **Jeudi 18 Juin, Après-midi**
-    *   **Lieu :** **Workshop Area B (Hall 7.3)**
-*   **Pourquoi :** C'est le dirigeant de votre institut de recherche, très investi dans l'Inria Startup Studio. Idéal pour du réseautage institutionnel.
+    *   **Date & Heure :** **Jeudi 18 Juin, Après-midi** | **Lieu :** **Workshop Area B (Hall 7.3)**
+*   **Recherche & Détails :** Président-directeur général de l'Inria, ancien conseiller du Premier ministre sur l'innovation et le numérique, chercheur en mathématiques appliquées (calcul scientifique, environnement). Il pilote la stratégie de transfert technologique massif de l'Inria vers les startups (Inria Startup Studio).
+*   **Pourquoi :** Idéal pour du réseautage institutionnel et pour comprendre la vision d'Inria sur l'entrepreneuriat des chercheurs.
 
 ### 4. Jerry Chow (IBM Quantum) & Loïc Henriet (Pasqal)
 *   **Conférence :** *Quantum leap: when will quantum computing deliver business value?*
-*   **Date & Heure :** **Jeudi 18 Juin, 09h45 – 10h45**
-*   **Lieu :** **Purple Stage (Hall 7.3)**
-*   **Pourquoi :** Pasqal est l'un des plus grands succès français de DeepTech issue de la recherche académique. Intéressant pour comprendre le cycle de vente de technologies de calcul intensif complexes.
+*   **Date & Heure :** **Jeudi 18 Juin, 09h45 – 10h45** | **Lieu :** **Purple Stage (Hall 7.3)**
+*   **Recherche & Détails :**
+    *   **Jerry Chow (IBM) :** Dirige les architectures de calcul intensif quantique chez IBM.
+    *   **Loïc Henriet (Pasqal) :** CTO de Pasqal, spin-off académique français qui conçoit des processeurs quantiques à atomes neutres (rubidium piégé par pinces optiques). Pasqal est particulièrement connu pour résoudre des problèmes d'optimisation de graphes (comme le Maximum Independent Set) en les projetant directement sur les états physiques de ses atomes.
+    *   **Pourquoi :** Comprendre les cycles de vente de technologies algorithmiques et de calcul de pointe complexes au niveau de grands groupes industriels.
 
 ### 5. Hugues Foulon (CEO d'Orange Cyberdefense)
 *   **Conférence :** *AI vs. AI: The Race to Secure the Future*
-*   **Date & Heure :** **Jeudi 18 Juin, 14h50 – 15h35**
-*   **Lieu :** **Purple Stage (Hall 7.3)**
-*   **Pourquoi :** Table ronde clé avec le leader de la cyber-défense en France pour comprendre les besoins actuels en termes d'IA prédictive et de détection automatique d'attaques en temps réel.
+*   **Date & Heure :** **Jeudi 18 Juin, 14h50 – 15h35** | **Lieu :** **Purple Stage (Hall 7.3)**
+*   **Recherche & Détails :** Dirige Orange Cyberdefense, le premier prestataire européen de services de sécurité managés. Ses équipes surveillent les réseaux de milliers d'entreprises mondiales et intègrent l'IA pour la détection automatisée des menaces et des attaques.
+*   **Pourquoi :** Roundtable clé pour comprendre les besoins actuels en termes d'IA prédictive et de détection automatique d'attaques réseau en temps réel.
 
 ---
 
