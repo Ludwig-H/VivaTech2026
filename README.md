@@ -92,7 +92,7 @@ gantt
 ## 🏢 Liste des Exposants Conseillés (Par ordre décroissant d'importance)
 
 ### 1. Dassault Systèmes
-*   **Stand :** À localiser sur place via l'application mobile officielle VivaTech 2026 (souvent dans le pavillon de partenaires industriels ou de la Région Île-de-France).
+*   **Stand :** À localiser sur place via l'application mobile officielle VivaTech 2026 (ou aux bornes d'information). *Note : Dassault Systèmes n'a pas de stand individuel répertorié dans la liste principale et co-expose généralement au sein de pavillons de grands partenaires industriels ou de la Région Île-de-France.*
 *   **Objectif :** HGP-Clusterer 3D (Cible N°1).
 *   **Informations clés :** Leader mondial des logiciels 3D et des jumeaux numériques (3DEXPERIENCE platform). Ils intègrent d'immenses nuages de points LiDAR dans leurs logiciels industriels et urbains pour la modélisation et la détection d'anomalies.
 *   **Douleur client :** Le clustering de nuages de points denses et bruités est difficile avec (H)DBSCAN.
@@ -116,31 +116,31 @@ gantt
 *   **Informations clés :** Banque publique d'investissement, financeur numéro 1 de la DeepTech en France. Essentiel pour comprendre les subventions (Bourse French Tech, i-PhD) et les prêts DeepTech adaptés à un spin-off académique.
 
 ### 5. SSNDT (Smart Sensing and Non-Destructive Testing)
-*   **Stand :** À localiser via l'application mobile officielle (co-exposant sur un pavillon d'ingénierie/recherche).
+*   **Stand :** À localiser via l'application mobile officielle. *Note : Ils co-exposent généralement sur un pavillon thématique d'ingénierie, de contrôle industriel ou de recherche.*
 *   **Objectif :** Détection de Fissures (Objectif N°2 - Signal/Image).
 *   **Informations clés :** Acteur de l'auscultation d'infrastructures et du contrôle non destructif.
 *   **Douleur client :** Détecter avec précision des micro-fissures sur des matériaux réels (béton, métal) avec des images bruitées (optiques/thermiques) sans base de données d'apprentissage.
 *   **Votre valeur :** Votre squelettisation par graphes de Frangi généralisés (Chapitre 12 de la thèse) fonctionne sans entraînement et fusionne efficacement les modalités visible/thermique.
 
 ### 6. Alithea Biotechnology GmbH
-*   **Stand :** Pavillon swisstech / Suisse (à localiser via l'application mobile officielle).
+*   **Stand :** Pavillon swisstech / Suisse (à localiser via l'application mobile officielle). *Note : Alithea est une startup suisse basée à Lausanne.*
 *   **Objectif :** Assemblage d'Haplotypes (Objectif N°2 - BioTech).
 *   **Informations clés :** Spécialiste du séquençage d'ARN haut débit (technologie BRB-seq).
 *   **Douleur client :** Reconstruire des séquences et gérer l'assemblage de fragments génomiques complexes sous bruit de lecture.
 *   **Votre valeur :** Votre cadre bayésien de détection de communautés sur graphes signés (MCMC couplés, Chapitre 11.4) qui bat les approches classiques dans les régimes bruités.
 
 ### 7. Wise Twin
-*   **Stand :** **Stand 3H14** (Hall 7.3, pavillon IMT - Institut Mines-Télécom).
+*   **Stand :** **Stand 3H14** (Hall 7.3, pavillon IMT - Institut Mines-Télécom). *Note : Ils y exposent sur le thème "transition industrielle+" le jeudi 18 juin.*
 *   **Objectif :** HGP-Clusterer 3D (Jumeaux Numériques).
 *   **Informations clés :** Développe des jumeaux numériques pour des infrastructures portuaires et industrielles. HGP-Clusterer 3D peut être intégré pour automatiser l'isolation d'anomalies de structure (comme votre projet Naval Group).
 
 ### 8. RESO3D
-*   **Stand :** **Stand 3C14** (Hall 7, pavillon Région Sud).
+*   **Stand :** **Stand 3C14** (Hall 7, pavillon Région Sud). *Note : RESO3D fait partie de la délégation officielle de la Région Sud.*
 *   **Objectif :** LiDAR 3D.
 *   **Informations clés :** Spécialiste de la cartographie 3D de réseaux souterrains. Pertinent pour l'extraction de structures linéaires dans des nuages de points bruités.
 
 ### 9. CAD42
-*   **Stand :** À localiser via l'application mobile officielle.
+*   **Stand :** À localiser via l'application mobile officielle (co-exposant possible sur un pavillon BTP/construction ou innovation industrielle).
 *   **Objectif :** LiDAR / Suivi 3D.
 *   **Informations clés :** Suivi 3D en temps réel et sécurité sur chantiers. Synergies avec vos travaux sur le tracking 4D LiDAR (SemanticKITTI).
 
